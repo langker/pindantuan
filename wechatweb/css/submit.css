@@ -1,0 +1,13 @@
+.address{
+	margin-bottom: 10px;
+	border: 1px dashed;
+	padding: 2px;
+}
+.submit-btn{
+	margin-top: 33px;
+}
+.alertName , .alertPhone{
+	display: none;
+	color:red;
+	text-align: center;
+}

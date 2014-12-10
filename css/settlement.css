@@ -1,0 +1,222 @@
+
+body{
+	animation-timing-function: cubic-bezier(0.1,1,1);
+}
+
+.recvInfo,.orderConfirm,.payInfo,.payGo{
+	width: 70%;
+	margin: auto;
+}
+.recvInfo{
+	margin-top: 100px;
+	height: 450px;
+}
+#baseRecvInfo img{
+	width: 16px;
+	display: none;
+}
+.payment img,.express img{
+	height: 40px;
+}
+.payment,.express{
+	height: 100px;
+}
+.baseRecvInfo{
+	height: 200px;
+}
+.baseRecvInfo h3,.payment h3,.express h3{
+	height: 30px;
+	margin: 10px 10px 10px 0;
+}
+.recvInfo input{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+}
+
+.myAddress,.phone,.realName,.express span{
+	width: 90%;
+	margin: 20px 0 0 10%;
+
+	color: black;
+	display: block;
+	height: 40px;
+}
+.express p{
+	height: 40px;
+	line-height: 40px;
+	color: red;
+}
+.myAddress,.phone,.realName{
+	background: white;
+	color: black;
+}
+
+.payment span{
+	width: 90%;
+	margin: 20px 0 0 10%;
+	background: white;
+	height: 75px;
+	display: block;
+}
+
+.express b{
+	background: black;
+	display: block;
+	width: 100px;
+	float: left;
+	height: 40px;
+	margin-right: 60px;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+}
+.orderUnpaidList,.orderUnpaid,.statusBar{
+	padding: 0;
+}
+.statusBar{
+	list-style: none;
+	background: black;
+	color: white;
+	height: 36px;
+	line-height: 36px;
+}
+
+.statusBar li,.orderUnpaid li{
+	text-align: center;
+}
+.orderUnpaid{
+	border:  1px solid #ccc;
+}
+.orderUnpaid li{
+	height: 96px;
+	border-top: 1px solid #ccc;
+}
+.orderUnpaidList{
+	margin-top: 19px;
+}
+.orderUnpaid h4{
+
+	background: #f8f8f8;
+	margin: 0;
+	height: 35px;
+	line-height: 35px;
+}
+.baseInfo,.newPrice,.itemNum,.priceTotal{
+	height: 96px;
+	line-height: 96px;
+}
+.baseInfo a{
+	color: #468fa2;
+}
+.newPrice span,.itemNum span,.priceTotal span{
+	display: block;
+	border-left: 1px solid #ccc;
+}
+.baseInfo img{
+	width: 76px;
+	height: 76px;
+	margin: 10px;
+	float: left;
+}
+.baseInfo p{
+	margin: 9px 60px 0 0 ;
+	text-align: left;
+	line-height: 20px;
+	font-size: 14px;
+}
+.baseInfo span{
+	font-size: 14px;
+	color: #468fa2;
+	height: 17px;
+	overflow: hidden;
+	display: block;
+}
+.payInfo{
+	margin-bottom: 40px;
+	background: #efefef;
+	border: 1px #ccc solid;
+}
+.payGo{
+	margin-bottom: 40px;
+	height: 50px;
+	float: right;
+	width: 180px;
+	background: #b10000;
+	color: white;
+	border: none;
+}
+.payGo a{
+	width: 20%;
+	float: right;
+	outline: none;
+	border: none;
+	background: rgba(201, 27, 27, 0.84);
+	height: 50px;
+	font-size: 25px;
+	color: white;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+}
+.payGo span{
+	float: right;
+	color: red;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.payInfo p{
+	text-align: right;
+	margin: 0;
+	height: 50px;
+	line-height: 50px;
+}
+.payInfo span{
+	margin: 0 20px 0 5px;
+	font-size: 20px;
+	color: red;
+}
+form{
+	width: 896px;
+	margin: 0 auto;
+}
+form p{
+	display: none;
+}
+
+#afterPay{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 33px;
+	width: 100%;
+	height: 100%;
+	background: rgba(1,1,1,0.3);
+	z-index: 1000000;
+}
+#afterPay ul{
+	width: 840px;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 240px;
+}
+.payOver a{
+	color: black;
+}
+#afterPay li{
+	float: left;
+	margin: 10px;
+	width: 400px;
+	height: 50px;
+	background: white;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 50px;
+}
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* 在这里设置你的内容的字体栈: */
+    font-family: Georgia, Times, "Times New Roman", serif;
+}

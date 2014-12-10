@@ -1,0 +1,370 @@
+html body{
+	font-size: 80%;
+}
+#container{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.bucket-title{
+	width: 70%;
+	margin: 0px auto;
+	padding: 20px 0px 0px 0px; 
+}
+.bucket-step{
+
+}
+.bucket-step ul{
+	width: 446px;
+	background: url('../img/cartnew_flow.png') no-repeat top right;
+	float:right;
+}
+.bucket-step ul li{
+	width: 176px;
+	text-align: center;
+	list-style: none;
+	color:#999;
+	float:left;
+}
+.bucket-step ul li span{
+	display: block;
+	padding: 15px 0px 0px 0px;
+	line-height: 12px;
+}
+.bucket-step .active{
+	background: url('../img/cart_flow_black.gif') no-repeat top center;
+	color:#000;
+}
+.bucket-step .end{
+	width: 94px;
+	text-align: right;
+}
+.main{
+	width: 1024px;
+	margin: 100px auto 40px auto;
+	position: relative;
+}
+.orderTable{
+	width: 100%;
+}
+.orderTable th{
+	height: 32px;
+	background: #000;
+	color:#fff;
+	vertical-align: middle;
+	text-align: center;
+}
+.orderTable .th1{
+	width: 24%;
+}
+.orderTable .th2{
+	width: 6%;
+}
+.orderTable .th3{
+	width: 6%
+}
+.orderTable .th4{
+	width: 6%
+}
+.orderTable .th5{
+	width: 9%;
+}
+.orderTable .th6{
+	width: 8%;
+}
+.mainTable .orderPre{
+	border-bottom: 4px solid #000;
+	margin-bottom: 19px; 
+}
+.mainTable .goods{
+	margin-bottom: 19px;
+}
+.goods .goodsTr{
+	border:1px solid #ccc;
+	height: 30px;
+	text-align:left;
+}
+.goods .goodsTr th{
+	background: #f8f8f8;
+}
+.goods .goodsTr .th1{
+	color: #333;
+	padding-left: 10px;
+	text-align: left;
+	font-family: 黑体;
+}
+.detail-s{
+	color: #999;
+}
+.orderTable td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+}
+.orderImg a{
+	color: #468fa2;
+	text-decoration: none;
+}
+.amount-wrapper{
+	width: 20%;
+	display: inline-block;
+}
+.orderImg input{
+	float: left;
+	margin: 9% 5% 0% 4%;
+}
+.orderImg img{
+	margin-top: 3%;
+	float: left;
+	margin-right: 3%;
+	width: 96px;
+}
+.orderImg p{
+	float: left;
+	padding-top: 3%;
+	text-align: left;
+	width: 200px;
+}
+.total {
+background: #efefef;
+border: 1px #ccc solid;
+padding: 10px;
+margin-bottom: 10px;
+zoom: 1;
+}
+.total .batch{
+	float: left;
+
+}
+.total .batch a {
+color: #333;
+margin-left: 20px;
+text-decoration: none;
+}
+.total .batch input{
+	margin-right: 5px;
+}
+.total .right{
+	float: right;
+	text-align: right;	
+}
+.total .price{
+	color: #333;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.total strong{
+	color: #e8044f;
+	font-size: 18px;
+}
+.total:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0px;
+}
+.orderSubmit .my-button{
+	display: inline-block;
+	zoom: 1;
+	line-height: normal;
+	white-space: nowrap;
+	vertical-align: baseline;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: rgb(202, 60, 60);
+	font-size: 18px;
+    padding: .5em 1em;
+    float: right;
+    width: 150px;
+}
+
+.orderSubmit .my-button:hover{
+
+	background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+}
+.underline {
+	text-decoration: line-through;
+}
+
+.deleteOrders {
+	cursor: pointer;
+	color: #000;
+	display: block;
+}
+.deleteOrders:hover {
+	color: #0022D5
+}
+.Goodsdetail:hover {
+	color: #0022D5
+}
+.total .batch a:hover{
+	color: #0022D5
+}
+.shadow {
+	display: none;
+	position: fixed;
+	top: 0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	background-color: #000;
+	opacity: .2;
+	-moz-opacity: .2;
+	-webkit-opacity: .2;
+	filter: alpha(opacity=20);
+}
+.shadowSelect {
+	display: none;
+	width: 400px;
+	height: 142px;
+	left: 430.5px;
+	top: 138.5px;
+	position: absolute;
+	border: 1px solid #aeaeae;
+	z-index: 9999;
+	background: #fff;
+} 
+.shadowSelectX {
+	position: absolute;
+	top: 16px;
+	right: 18px;
+	cursor: pointer;
+}
+.shadowTit {
+	position: relative;
+	top: 28px;
+	width: 260px;
+	font-size: 19px;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.shadowope {
+	position: relative;
+	top: 66px;
+	width: 120px;
+	margin: 0 auto;
+}
+.orderEmpty {
+	width: 424px;
+	margin: 0 auto;
+	padding-bottom: 270px;
+}
+.orderEmpty img{
+	width: 100%;
+}
+.logisticsIcon {
+	width: 27px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.logisticsIcon img {
+	width: 100%;
+	cursor: pointer;
+}
+.logistics {
+	position: fixed;
+	width: 840px;
+	top: 60px;
+	left: 238px;
+	background-color: rgb(242, 252, 255);
+	border: 6px #000 solid;
+	z-index: 50;
+	-moz-border-radius: 25px;      
+    -webkit-border-radius: 25px;   
+    border-radius:25px;   
+    display: none;
+}
+.logisticsImg {
+	margin: 50px 10px 0px 55px;
+	width: 200px;
+	padding-bottom: 20px;
+	border-bottom: 1px #AFAFAF solid;
+}
+.logisticsCircle {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+.logisticsName {
+	position: absolute;
+	top: 72px;
+	left: 350px;
+	font-size: 269%;
+	font-weight: 800;
+}
+.logisticsOther {
+	margin: 0px 80px 0px 55px;
+	font-size: 150%;
+	font-weight: 800;
+	width: 210px;
+	word-break: break-word;
+	float: left;
+}
+.logisticsOther p {
+	margin:  1em 0;
+}
+.logisticsOther .logAllContent {
+	margin:  1em 0 1em 1em
+}
+.logisticsDetail {
+	width: 400px;
+	float: left;
+	margin-bottom: 30px;
+}
+.logisticsDetail p{
+	margin: 0 0 8px 0;
+}
+.logisticsFlagLogo {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 40px;
+}
+.orderColor {
+	color: #000;
+	cursor: pointer;
+}
+.orderColor:hover {
+	color: #0022D5;
+}
+.orderComment {
+	position: fixed;
+	width: 500px;
+	top: 100px;
+	left: 460px;
+	background-color: rgb(242, 252, 255);
+	display: none;
+}
+.orderText {
+	width: 400px;
+	padding: 0px;
+	height: 145px;
+	margin: 20px 50px;
+}
+.orderComment img {
+	position: absolute;
+	width: 20px;
+	left: 470px;
+	cursor: pointer;
+	top: 5px;
+}
+.orderCommentText {
+	margin: 0 210px;
+}
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* 在这里设置你的内容的字体栈: */
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+.logistics100 {
+	position: absolute;
+	color: #BBBBBB;
+	bottom: -1px;
+	right: 62px;
+}

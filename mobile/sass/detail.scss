@@ -1,0 +1,40 @@
+.content{
+	width:100%;
+	.content-detail{
+		padding: 15px;
+		img{
+			width: 100%;
+		}	
+	}
+}
+.header{
+	margin-top:-7px;
+	ul{
+		height: 33px;
+		li{
+			&:first-child{
+				background-color: rgba(0,0,0,0.5);
+				padding:0 5px 0 5px;
+				width:30%;
+			}
+			p{
+				color:#fff;
+				line-height: 33px;
+				text-align: center;
+			}
+			img{
+				width: 98px;
+				margin-top: 5px;
+			}
+			float: left;
+			list-style: none;
+			height: 33px;
+			&+li{
+				background-color:#4ba733;
+			}
+		}
+	}
+	.header-tittle{
+		width: 66%;
+	}
+}

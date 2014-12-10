@@ -1,0 +1,141 @@
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea{margin: 0; padding: 0;}
+li{list-style-type: none;}
+body{font-family:"Microsoft YaHei", ۚͥED1\4F53, ̎ͥb8b\4f53, sans-serif;background: #fff;}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  position: relative;
+}
+.headerTit {
+	width: 100%;
+	position: relative;
+
+}
+.headerTit img {
+	width: 100%
+}
+.swiperBox {
+	/*position: fixed;
+	top: 0;
+	left: 0;
+*/}
+.swiperTit {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 700;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  /*height: 100%;*/
+  color: #fff;
+  text-align: center;
+}
+.swiper-slide img {
+  /*height: 100%;*/
+  	width: 100%;
+	border-radius: 20px;
+	background: #111;
+	border: 3px solid white;
+	margin: 5px auto;
+	position: relative;
+	box-shadow: 0px 0px 5px #000;
+
+}
+.pagination {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	bottom: 5px;
+	display: none;
+}
+.swiper-wrapper .swiper-slide-active {
+	opacity: 1;
+}
+.swiper-slide {	
+	opacity: 0.4;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
+	transition: 300ms;
+}
+.swiper-pagination-switch {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #999;
+	box-shadow: 0px 1px 2px #555 inset;
+	margin: 0 3px;
+	cursor: pointer;
+}
+.swiper-visible-switch {
+ background: #fff;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+.carouselPic {
+	width: 90%;
+	position: relative;
+	margin: 0 5%;
+}
+.carouselDetail {
+	font-size: 12px;
+	/* text-align: center; */
+	width: 100%;
+	color: #000;
+	overflow: hidden;
+	height: 18px;
+
+}
+.carouselDetail p {
+	margin: 0;
+}
+.carouselTit {
+	float: left;
+	width: 70%;
+	text-align: left;
+	overflow: hidden;
+}
+.carouselPri {
+	float: right;
+	width: 30%;
+	overflow: hidden;
+}
+.carouselPri {
+	color: #F00;
+}
+.carouselPri p{
+	float: right;
+}
+.content:  {
+	position: relative;
+}
+.contentLike {
+	width: 24%;
+	margin: 0 auto 10% auto;
+	background: #cdcdcd;
+	height: 31px;
+	border-radius: 15px;
+	border: 3px solid white;
+	box-shadow: 0px 0px 5px #000;
+}
+.contentLike p {
+	text-align: center;
+	height: 60%;
+	line-height: 33px;
+	font-size: 16px;
+}
+.clear {
+	clear: both;
+}

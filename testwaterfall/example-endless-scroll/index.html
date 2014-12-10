@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>jQuery Wookmark Plug-in Example</title>
+  <meta name="description" content="An very basic example of how to use the Wookmark jQuery plug-in.">
+  <meta name="author" content="Christoph Ono, Sebastian Helzle">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="../css/reset.css">
+
+  <!-- Global CSS for the page and tiles -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/waterfall.css">
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <h1>jQuery Wookmark Plug-in Example</h1>
+      <p>Scroll down to see the infinite scroll effect.</p>
+    </header>
+    <div id="main" role="main">
+
+      <ul id="tiles">
+        <!-- These are our grid blocks -->
+        
+        <!-- End of grid blocks -->
+      </ul>
+
+    </div>
+    <footer>
+
+    </footer>
+  </div>
+
+  <!-- include jQuery -->
+  <script src="../libs/jquery.min.js"></script>
+
+  <!-- Include the imagesLoaded plug-in -->
+  <script src="../libs/jquery.imagesloaded.js"></script>
+
+  <!-- Include the plug-in -->
+  <script src="../jquery.wookmark.js"></script>
+
+  <!-- Once the page is loaded, initalize the plug-in. -->
+  <script type="text/javascript">
+    (function ($){
+      var $tiles = $('#tiles'),
+          $handler = $('li', $tiles),
+          $main = $('#main'),
+          $window = $(window),
+          $document = $(document),
+          count = 0;
+          options = {
+            autoResize: true, // This will auto-update the layout when the browser window is resized.
+            container: $main, // Optional, used for some extra CSS styling
+            offset: 20, // Optional, the distance between grid items
+            itemWidth: 210 // Optional, the width of a grid item
+          };
+
+      /**
+       * Reinitializes the wookmark handler after all images have loaded
+       */
+      function addDom() {
+        //每一小块代码
+        var sBlock = "<li><div class=\"pin\"><div class=\"box\"><div class=\"box-img\"><img src=\"\"></div><div id=\"z-like\"><span class=\"z-price\">￥100</span><span class=\"z-love\"><img src=\"img/love.png\"/><span>100</span></span></div><div id=\"z-title\"><img src=\"img/qianyin.png\"><span>向超然是个大傻逼你知道吗，好吧你好像不知道</span><img src=\"img/houyin.png\"> </div><div id=\"divide-line\"><img src=\"img/z-line.png\"></div><div id=\"comment\"><div class=\"sub-comment\"><div class=\"who-comment\"><span>向超然</span></div><div class=\"comment-what\"><span>我是个大傻逼</span></div></div></div></div></div></li>";
+        for (var i = 0; i < item.length; i++) {
+          var sb = $(sBlock);
+          $("#tiles").append(sb);
+          count++;
+        };
+      }
+      function initSmallBlock() {
+
+        var index0 = count - item.length ;
+
+        var num = item.length;  //当前刷新时要添加的数量
+
+        for (var i = 0; i < item.length; i++) {
+
+          var img = $("#tiles li .pin .box .box-img img").eq(index0);
+          var price = $(".z-price").eq(index0);
+          var like = $(".z-love span").eq(index0);
+          var title = $("#z-title span").eq(index0);
+          /*修改价格*/
+          var fPrice = "￥" + item[i].curprice;
+          price.text(fPrice);
+
+          /*修改like数量*/
+          like.text(item[i].sellnum);
+          title.text(item[i].name);
+
+          /*渲染评论开始*/
+
+          for (var j = 0; j < item[i].comment.length; j++) {
+            /*渲染评论*/
+            var name = $(".who-comment span").eq(index0);
+            var commt = $(".comment-what span").eq(index0);
+
+            name.text(item[i].comment[j].username);
+            commt.text(item[i].comment[j].detail);
+
+          };
+          img.attr("src", item[i].imgurl);
+
+          index0++;
+        };
+        return false;
+      }
+
+      function applyLayout() {
+        $tiles.imagesLoaded(function() {
+          // Destroy the old handler
+          if ($handler.wookmarkInstance) {
+            $handler.wookmarkInstance.clear();
+          }
+
+          // Create a new layout handler.
+          $handler = $('li', $tiles);
+          $handler.wookmark(options);
+        });
+      }
+
+      /**
+       * When scrolled all the way to the bottom, add more tiles
+       */
+      function onScroll() {
+        // Check if we're within 100 pixels of the bottom edge of the broser window.
+        var winHeight = window.innerHeight ? window.innerHeight : $window.height(), // iphone fix
+            closeToBottom = ($window.scrollTop() + winHeight > $document.height() - 100);
+
+        if (closeToBottom) {
+          // Get the first then items from the grid, clone them, and add them to the bottom of the grid
+          // var $items = $('li', $tiles),
+          //     $firstTen = $items.slice(0, 10);
+          requestItem();
+        }
+      };
+
+      function requestItem(){
+        $.post("../../php/waterfall.php",{page : count},function(data){
+            var tempdata = data.substr(1,data.length);
+            item = JSON.parse(tempdata);
+            console.log(item);
+            addDom();
+            initSmallBlock();
+            applyLayout();
+          })
+      }
+      // Call the layout function for the first time
+      $.post("../../php/waterfall.php",{page : count},function(data){
+        var tempdata = data.substr(1,data.length);
+        item = JSON.parse(tempdata);
+        console.log(item);
+        addDom();
+        initSmallBlock();
+        applyLayout();
+      });
+      
+
+      // Capture scroll event.
+      $window.bind('scroll.wookmark', onScroll);
+    })(jQuery);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+body{
+	background: white;
+}
+#container{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.listHeaderPoster,.listFilterBox,#listContent,.listHeaderMap,.listHeaderSearch{
+	width: 1024px;
+	margin: auto;
+	padding: 0;
+}
+.listHeaderPoster,.listHeaderMap,.listHeaderSearch{
+	margin-top: 100px;
+}
+.listHeaderMap a{
+	color: black;
+}
+.listHeaderPoster img{
+	width: 100%;
+	/*height: 300px;*/
+}
+.listFilterBox{
+	height: 20px;
+	margin-top: 40px;
+}
+.listHeaderSearch div{
+	height: 30px;
+	width: 300px;
+	outline: none;
+	font-size: 20px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0px 6px #ccc;
+}
+.listHeaderSearch input{
+	height: 28px;
+	width: 259px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	padding-left: 10px;
+	float: left;
+}
+.listHeaderSearch img{
+	height: 20px;
+	margin: 0;
+	padding: 5px;
+	float: right;
+	cursor: pointer;
+	width: 20px;
+}
+.listHeaderSearch img:hover{
+	cursor: point;
+}
+.listFilterBox h2{
+	width: auto;
+	float: left;
+	margin: 0;
+	line-height: 20px;
+	padding: 0 5px 0 5px;
+	height: 100%;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	font-size: 20px;
+}
+.listFilter{
+	width: 80%;
+	float: left;
+	height: 100%;
+}
+.listFilter a{
+	margin-left: 20px;
+	line-height: 20px;
+	color: black;
+}
+.listFilter a:hover{
+	background: black;
+	color: white;
+}
+.listFilter img{
+	height: 14px;
+}
+.listGoodsItem{
+	background: white;
+	width: 243px;
+	margin: auto;
+	border-radius: 3px;
+	height: 400px;
+}
+.listGoodsItem a{
+	display: block;
+	color: rgb(83, 83, 83);
+}
+.listGoodsItemImg{
+	height: 236px;
+	overflow: hidden;
+}
+.listGoods{
+	padding: 0;
+	margin-top: 20px;
+}
+.noResult{
+	margin: auto;
+}
+.listGoodsItem img,.listGoodsItem h3,.itemPrice{
+	width: 96%;
+	margin: 2%;
+}
+.itemPrice{
+	background: black;
+	margin: 8% 0 0 2%;
+	width: 66%;
+	line-height: 30px;
+	height: 30px;
+	float: left;
+	color: white;
+	font-size: 13px;
+	padding-left: 6px;
+}
+.listGoodsItem h3{
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 10px;
+	height: 41px;
+	overflow: hidden;
+	line-height: 1.7em;
+}
+.listGoodsItem h3 a{
+	height: 24px;
+}
+.listGoodsItemDetail{
+	background: #f5f5f5;
+	border-top: 1px solid rgba(89, 206, 187,.2);
+	height: 18%;
+}
+.nowprice,.oriprice,.sales{
+	margin-top: 10%;
+	float: left;
+	height: 40%;
+	line-height: 30px;
+}
+.nowprice{
+	border-left: 3px solid black;
+	width: 97px;
+	background: rgba(123,123,123,.2);
+	padding-left: 5px;
+	margin: 10% 0 0 -1%;
+	font-weight: 900;
+}
+.nowprice span{
+	margin-left: 4px;
+	font-size: 14px;
+	color: rgb(117, 148, 77);
+}
+.oriprice{
+	width: 71px;
+	color: black;
+	font-weight: 100;
+	font-size: 12px;
+	margin-left: 0px;
+	line-height: 30px;
+	background: rgba(123,123,123,.2);
+	text-decoration: line-through;
+}
+.sales{
+	text-align: right;
+	width: 68px;
+}
+.listGoods li{
+	margin-bottom: 70px;
+	float: left;
+
+}
+.listPages{
+	height: 40px;
+	width: 100%;
+	padding: 0;
+}
+.listPages a{
+	color: black;
+}
+.morePgae,.page,.prePage,.nextPage{
+	list-style: none;
+	height: 30px;
+	float: left;
+	margin: 0 15px 0 15px;
+	line-height: 30px;
+	text-align: center;
+}
+.prePage,.nextPage{
+	width: 60px;
+}
+.page{
+	width: 30px;
+}
+.prePage a,.nextPage a,.page a{
+	display: block;
+}
+.page a:hover,.nextPage a:hover,.prePage a:hover{
+	background: black;
+	color: white;
+}
+.listHeaderMap li{
+	margin-top: 40px;
+}
+.listHeaderMap dl{
+	margin: auto;
+	width: 90%;	
+	border-top: 4px solid black;
+}
+#listContent{
+	padding-bottom: 270px;
+}
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* 在这里设置你的内容的字体栈: */
+    font-family: 微软雅黑, 黑体 ,sans-serif;
+}

@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'dongqinghei';
+	src: url('fonts/dongqinghei W3.otf') format('otf'),
+	url('fonts/Hiragino Sans GB W3.otf') format('otf');
+}
+
+html{
+	body{
+		font-family: dongqinghei;
+	}
+}

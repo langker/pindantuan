@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'dongqinghei';
+  src: url("fonts/dongqinghei W3.otf") format("opentype"), url("fonts/Hiragino Sans GB W3.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'pinghei';
+  src: url("fonts/pinghei.ttf") format("truetype");
+}
+
+/* line 12, ../sass/global.scss */
+html body {
+  font-family: 微软雅黑;
+}

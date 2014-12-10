@@ -1,0 +1,125 @@
+/* line 4, ../sass/main_page.scss */
+.header {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+/* line 10, ../sass/main_page.scss */
+.logo {
+  width: 100px;
+  float: left;
+  background-color: #90af8e;
+  padding: 10px;
+  height: 40px;
+}
+/* line 12, ../sass/main_page.scss */
+.logo img {
+  width: 87px;
+  height: 20px;
+}
+
+/* line 21, ../sass/main_page.scss */
+.slogan {
+  width: 88px;
+  background: #4ba733;
+  float: left;
+  padding: 10px;
+  height: 40px;
+  text-align: center;
+}
+/* line 24, ../sass/main_page.scss */
+.slogan p {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* line 33, ../sass/main_page.scss */
+.content {
+  padding-top: 15%;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+/* line 38, ../sass/main_page.scss */
+.banner {
+  width: 100%;
+}
+/* line 40, ../sass/main_page.scss */
+.banner p {
+  width: 20%;
+  font-size: 0.8em;
+  margin-left: 8%;
+  font-weight: 800;
+}
+
+/* line 47, ../sass/main_page.scss */
+.article {
+  padding: 15px;
+}
+/* line 49, ../sass/main_page.scss */
+.article .article-item {
+  height: 85px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* line 54, ../sass/main_page.scss */
+.article .article-item img {
+  width: 85px;
+  height: 85px;
+}
+/* line 58, ../sass/main_page.scss */
+.article .article-item .a-title {
+  color: black;
+  width: 60%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  font-weight: 500;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+/* line 69, ../sass/main_page.scss */
+.article .article-item .time {
+  position: absolute;
+  width: 70px;
+  left: 103px;
+  top: 70px;
+  font-size: 0.7em;
+  color: black;
+}
+/* line 77, ../sass/main_page.scss */
+.article .article-item .zan {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: absolute;
+  top: 67px;
+  left: 212px;
+}
+/* line 83, ../sass/main_page.scss */
+.article .article-item .zan img {
+  width: 15px;
+  height: 15px;
+}
+/* line 87, ../sass/main_page.scss */
+.article .article-item .zan span {
+  color: black;
+  font-size: 0.7em;
+  margin-right: 10px;
+}
+/* line 95, ../sass/main_page.scss */
+.article .setLine img {
+  width: 100%;
+}

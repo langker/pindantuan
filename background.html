@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	     <title>BG</title>
+	     <meta charset="utf-8"/>
+		
+	     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"><!-- 
+	     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+	     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css"> -->
+	     <link rel="stylesheet" type="text/css" href="css/background.css">
+	     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> 
+	</head>
+	<body>
+		<div class="content">
+			<div class="opeTit">
+				<div class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="BGoods panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				          商品
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul class="nav nav-pills nav-stacked">
+						  <li class="active" id="forList"><a>商品列表</a></li>
+						  <li id="forOldsList"><a>下架商品列表</a></li>
+						  <li id="forNewsList"><a>新建商品</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="BOrder panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				          订单
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul class="nav nav-pills nav-stacked">
+						  <li class="active" id="allOrder"><a>所有订单</a></li>
+						  <li id="finishedOrder"><a>今日已下订单</a></li>
+						  <li id="finishOrder"><a>今日未下订单</a></li>
+						  <li id="orderNumAdd"><a>添加订单号</a></li>
+						  <li id="printOrder"><a>打印订单</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="BWillOrder panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				          到付
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul class="nav nav-pills nav-stacked">
+						  <li class="active" id="NotWillOrder"><a>未付款</a></li>
+						  <li id="willOrdered"><a>已付款</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="BCommon panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+				          留言
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseFour" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul class="nav nav-pills nav-stacked">
+						  <li class="active" id="allCommon"><a>所有留言</a></li>
+						  <li id="finishedCommon"><a>今日已审批</a></li>
+						  <li id="finishCommon"><a>今日未审批</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="BStatistics panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+				          统计
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseFive" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul class="nav nav-pills nav-stacked">
+						  <li  id="AllStatistics"><a>所有统计</a></li>
+						</ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="opeContent">
+				<div class="goodsList">
+					<ul class="nav nav-pills goodsTot">
+						<li class="active"><a>全部</a></li>
+					    <li class="dropdown">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	商家 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					</ul>
+					<div class="search">
+						<input type="text" class="searchText">
+						<input type="submit" value="" class="submit">
+					</div>
+					
+					<div class="goodsFlagOrder"></div>
+				</div>
+				<div class="deleteGoodsList">
+					<ul class="nav nav-pills goodsTot">
+						<li class="active"><a>全部</a></li>
+					    <li class="dropdown">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	商家 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					</ul>
+					<div class="searchDelete">
+						<input type="text" class="searchText">
+						<input type="submit" value="" class="submit">
+					</div>
+					<div class="goodsDeleteOrder">
+						<div class="goodsPic">
+							<img src="img/goods3.jpg">
+						</div>
+						<div class="goodsName">
+							<p>14新款afs jeep休闲牛仔裤 短裤男裤战地吉普 短裤男夏季薄款男裤</p>
+						</div>
+						<div class="goodsDelete">
+							<button type="button" class="btn btn-danger">上架</button>
+						</div>
+						<div class="goodsStore">
+							<span class="comeFrom">来自：</span>
+							<span>nike专卖店</span>
+						</div>
+						<div class="goodsSale">
+							<span class="comeFrom">销售数量：</span>
+							<span>200</span>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="goodsFlagOrder"></div>
+				</div>
+				<div class="newGoods">
+					<!-- <form class="bs-example bs-example-form" role="form"> -->
+						<div class="newGoodsStoreName">
+							<span>所属商家：</span>
+					        <div class="row goodsStoreName">
+					        	<div class="col-lg-6">
+						          <div class="input-group">
+						            <div class="input-group-btn">
+						              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">商家 <span class="caret"></span></button>
+						              <ul class="dropdown-menu" role="menu">
+						                <li class="divider"></li>
+						                <li class="newCreate"><a>新建</a></li>
+						              </ul>
+						            </div><!-- /btn-group -->
+						            <input type="text" class="form-control" placeholder="商家">
+						          </div><!-- /input-group -->
+					        	</div>
+					        </div>
+					     </div>
+					     <div class="newGoodsStoreUrl">
+					     	<span>商家链接：</span>
+				        	<input type="text" class="form-control goodsTit" placeholder="商家链接">
+					     </div>
+				        <div class="newGoodsName">
+				        	<span>商品名称：</span>
+				        	<input type="text" class="form-control goodsTit" placeholder="商品名称">
+				        </div>
+
+				        <div class="price">
+				        	<div class="taobaoPrice allPrice">
+				        		<span>淘宝价：</span>
+				        		<input type="text" class="form-control uploadPrice" placeholder="淘宝价">
+				        	</div>
+				        	<div class="pindanPrice allPrice">
+				        		<span>拼单价：</span>
+				        		<input type="text" class="form-control uploadPrice" placeholder="拼单价">
+				        	</div>
+				        	<div class="purchase allPrice">
+				        		<span>进价：</span>
+				        		<input type="text" class="form-control uploadPrice" placeholder="进价">
+				        	</div>
+				        	<div class="clear">
+				        	</div>
+				        </div>
+				        <div class="keyword">
+				        	<span class="word floatLeft">关键字：</span>
+				        	<input type="text" class="form-control keywordRead floatLeft" placeholder="关键字">
+				        	<div class="clear"></div>
+				        </div>
+				        <div class="option">
+				        	<span>参数：</span>
+				        	<div class="optionMain">
+				        		<input type="text" class="form-control optionValue optionName" placeholder="参数名字">
+				        		<span class="optioncode">：</span>
+				        		<div  class="createOptionValue floatLeft">
+					        		<div class="optionDetail newsOption optionValue ">
+					        			<span>新建</span>
+					        			<span class="glyphicon glyphicon-plus size"><span>
+					        		</div>
+					        		<input type="text" class="form-control optionValue optionTxt" placeholder="参数值">
+					        	</div>
+				        		<div class="clear"></div>
+				        		<div class="optDelete">
+				        		<span class="glyphicon glyphicon-remove"></span> 
+				        		</div>
+				        	</div>
+				        	<div class="optionDetail newsOptionBox optionValue floatRight">
+			        			<span>新建</span>
+			        			<span class="glyphicon glyphicon-plus size"><span>
+			        		</div>
+			        		<div class="clear"></div>
+				        </div>
+				        <div class="kinds">
+				        	<span class="kindsTitle">分类：</span>
+				        	<div class="kindsBox">
+					        	<div class="row goodsKindsName floatLeft">
+						        	<div class="col-lg-6 kindsWidth">
+							          <div class="input-group">
+							            <div class="input-group-btn">
+							              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">分层一 <span class="caret"></span></button>
+							              <ul class="dropdown-menu" role="menu">
+							                <li class="divider"></li>
+							                <li  class="newCreate"><a>新建</a></li>
+							              </ul>
+							            </div><!-- /btn-group -->
+							            <input type="text" class="form-control" placeholder="分类">
+							          </div><!-- /input-group -->
+						        	</div>
+						        	<div class="kindsDelete">
+						        		<span class="glyphicon glyphicon-remove"></sapn>
+						        	</div>
+						        </div>
+						        <div class="optionDetail kindsCreate optionValue floatRight">
+				        			<span>新建</span>
+				        			<span class="glyphicon glyphicon-plus size"><span>
+				        		</div>
+						        <div class="clear">
+						        </div>
+						    </div>
+				        </div>
+				        <div class="optionPrice">
+							<span>不同参数价：</span>
+							<div class="optionPriceBox">
+					        	<div class="row optionPriceName floatLeft">
+						        	<div class="col-lg-6 kindsWidth">
+							          <div class="input-group">
+							            <div class="input-group-btn">
+							              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">参数<span class="caret"></span></button>
+							              <ul class="dropdown-menu" role="menu">
+							              </ul>
+							            </div><!-- /btn-group -->
+							            <input type="text" class="form-control" placeholder="参数">
+							          </div><!-- /input-group -->
+						        	</div>
+						        </div>
+						        <div class="optionTBPriceMiniBOx floatLeft">
+							        <input type="text" class="form-control  optionPriceValue" placeholder="淘宝价">
+							    </div>
+							    <div class="optionPDPriceMiniBOx floatLeft">
+							        <input type="text" class="form-control  optionPriceValue" placeholder="拼单价">
+							        <div class="optionPriceDelete">
+							        	<span class="glyphicon glyphicon-remove"></sapn>
+							        </div>
+							    </div>
+						        <div class="clear">
+						        </div>
+						    </div>
+						    <div class="optionDetail optionPriceCreate optionValue floatRight">
+			        			<span>新建</span>
+			        			<span class="glyphicon glyphicon-plus size"><span>
+			        		</div>
+			        		<div class="clear">
+						    </div>
+						</div>
+						<button type="button" class="createGoodsSubmit btn btn-primary">物品创建</button>
+						<div class="newGoodsPic">
+					        <span>商品图片：</span>
+					        <div class="goodsUploadPic">
+					        	<form action="php/upload.php" method="post" enctype="multipart/form-data">
+						        	<button type="button" class="btn btn-primary buttonPic">图片1</button>
+						        	<div class="boxUpload1">
+						        		<input type="file" class="upload" name="pic[]">
+						        	</div>
+						        	<button type="button" class="btn btn-success buttonPic">图片2</button>
+						        	<div class="boxUpload2">
+						        		<input type="file" class="upload" name="pic[]">
+						        	</div>
+						        	<button type="button" class="btn btn-info buttonPic">图片3</button>
+						        	<div class="boxUpload3">
+						        		<input type="file" class="upload" name="pic[]">
+						        	</div>
+						        	<button type="button" class="btn btn-warning buttonPic">图片4</button>
+						        	<div class="boxUpload4">
+						        		<input type="file" class="upload" name="pic[]">
+						        	</div>
+						        	<input type="hidden" name="goodsId" class="hiddenInput" />
+						        	<input type="submit" name="upload" id="picUpload" value="upload" />
+						        </form>
+					        </div>
+				    	</div>
+				   <!--  </form> -->
+				</div>
+				<div class="allOrderList">
+					<ul class="nav nav-pills goodsTot">
+						<li class="active"><a>全部</a></li>
+					    <li class="dropdown OrderStoreList">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	商家 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					  	<li class="dropdown orderUserList">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	用户 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					  	<li class="dropdown orderAddressList">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	地址 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					  	<li class="dropdown">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	状态 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li><a href="#">未向商家下单</a></li>
+					            <li><a href="#">已向商家下单</a></li>
+					        </ul>
+					  	</li>
+					  	<li class="dropdown">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	时间 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li><a href="#">顺序</a></li>
+					            <li><a href="#">倒序</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					</ul>
+					<div class="orderListFLag"></div>
+				</div>
+				<div class="orderOperateFinished">
+					<div class="orderStore">
+						<p class="orderNameBG">xxoo专用店</p>
+						<button type="button" class="btn btn-warning">下单</button>
+						<div class="orderNum">
+							<span class="comeFrom">订单数：</span>
+							<span>20</span>
+						</div>
+					</div>
+					<div class="flagOrderOperate"></div>
+				</div>
+				<div class="orderOperateFinish">
+					<div class="flagOrderFinishOperate"></div>
+				</div>
+				<div class="orderNumDetail">
+					<!-- <div class="orderNumber">
+						<p class="orderNumberStore orderNumberCommon">Nike</p>
+						<p class="orderNumberAddress orderNumberCommon">电子科技大学</p>
+						<p class="orderNumberDate orderNumberCommon">2014-08-09</p>
+						<div class="orderNumBox">
+							 <input type="text"  class="form-control orderNumberTxt" placeholder="订单号">
+							 <input type="text" class="form-control storeNum" placeholder="快递公司代码">
+							 <button type="button" class="btn btn-primary">提交</button>
+						</div>
+					</div> -->
+					<div class="flagOderNumber"></div>
+				</div>
+				<div class="printOrderButton">
+					<a href="http://www.pindantuan.cn/smallorder/sheet.html" target="_blank" >
+						<button type="button" class="btn btn-primary">打印今日订单</button>
+					</a>
+				</div>
+				<div class="allWillNotOrderList" >
+					<!-- <div class="willNotOrderList">
+					    <div class="willOrderListHead">
+						    <div class="willNotHeadTop headBox floatLeft">
+						    	<span>用户:</span>
+						    	<span>Arris<span></span></span>
+						    </div>
+						    <div class="willNotHeadTop headBox floatLeft">
+						    	<span>电话:</span>
+						    	<span>1838888888<span></span></span>
+						    </div>
+						    <div class="willNotHeadTop headBox floatLeft">
+						    	<span>时间:</span>
+						    	<span>2014-09-11<span></span></span>
+						    </div>
+						    <div class="willNotHeadTop headBox floatLeft">
+						    	<span>总价:</span>
+						    	<span>6<span></span></span>
+						    </div>
+						    <div class="willNotHeadTop willNotHeadButton headBox floatLeft">
+						    	<button type="button" class="btn btn-warning">下单</button>
+						    </div>
+						    <div class="willNotHeadTop willNotHeadButton headBox floatLeft">
+						    	<button type="button" class="btn btn-danger">删除</button>
+						    </div>
+						    <div class="clear"></div>
+						</div>
+					   	<div class="willNotOrderGoodsList">
+						    <div class="orderGoodsPic floatLeft">
+						    	<img src="photo/53f206b44681c5f66b3c1f8a/1.jpg" />
+						    </div>
+						    <div class="orderGoodsDetail borderLeft floatLeft">
+						    	<p>【心连心】特产零食品进口料糖客蔓越莓曲奇饼干手工200g烘培小吃</p>
+						    	<p>口味 : 巧克力榛果  </p>
+						    </div>
+						    <div class="orderGoodsNum borderLeft floatLeft">
+						    	<span>1</span>
+						    	<span>个</span>
+						    </div>
+						    <div class="orderGoodsPrice borderLeft floatLeft">
+						    	<span>￥</span>
+						    	<span>6</span>
+						    	<span>/</span>
+						    	<span>￥</span>
+						    	<span>6.99</span>
+						    </div>
+						    <div class="orderGoodsTotal borderLeft floatLeft">
+						    	<span>￥</span>
+						    	<span>6</span>
+						    </div>
+					   </div>
+					</div>  -->
+					<div class="willNotOrderListFLag"></div>
+				</div>
+				<div class="allWillOrderList">
+					<div class="willOrderListFLag"></div>
+				</div>
+				<div class="comments">
+					<ul class="nav nav-pills commentsTit">
+						<li class="active"><a>全部</a></li>
+					    <li class="dropdown commonUserList">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	用户 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					  	<li class="dropdown commonTimeList">
+					    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      	时间 <span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+					            <li><a href="#">顺序</a></li>
+					            <li><a href="#">倒序</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#">搜索</a></li>
+					        </ul>
+					  	</li>
+					</ul>
+					<div class="search">
+						<input type="text" class="searchText">
+						<input type="submit" value="" class="submit">
+					</div>
+					<div class="commentsOrder">
+						<div class="detailCom">
+							<div class="commentContent">
+								卖家说72小时内发货，你要能等就下单。我等了整两天说退款了，终于发货。鞋尺码无误，卖相不错，鞋底一如传说中(前人评价)那么硬，让我怀疑这是不是真品。如果你真买去当球鞋那你就完蛋了，哇哈哈！夏天穿的，面料较薄，没有内棉，舒适性可能不太好。当然它的洞洞很多，透气性很好。
+							</div>
+							<div class="commentOther floatRight">
+								<div class="commentDetailOth  floatRight">
+									<span>状态：</span>
+									<div class="btn-group">
+									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									    已审查 <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu" role="menu">
+									    <li><a href="#">已审查</a></li>
+									    <li><a href="#">未审查</a></li>
+									  </ul>
+									</div>
+								</div>
+								<div class="commentDetailOth commentDetailOth1 floatRight">
+									<span>日期：</span>
+									<span>2014-05-29</span>
+								</div>
+								<div class="commentDetailOth commentDetailOth1 floatRight">
+									<span>用户：</span>
+									<span>我呵呵了</span>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+						<div class="insertCommon"></div>
+					</div>
+				</div>
+				<div class="finishedCommon">
+					<div class="commentsOrder">
+						<div class="detailCom">
+							<div class="commentContent">
+								卖家说72小时内发货，你要能等就下单。我等了整两天说退款了，终于发货。鞋尺码无误，卖相不错，鞋底一如传说中(前人评价)那么硬，让我怀疑这是不是真品。如果你真买去当球鞋那你就完蛋了，哇哈哈！夏天穿的，面料较薄，没有内棉，舒适性可能不太好。当然它的洞洞很多，透气性很好。
+							</div>
+							<div class="commentOther floatRight">
+								<div class="commentDetailOth  floatRight">
+									<span>状态：</span>
+									<div class="btn-group">
+									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									    已审查 <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu" role="menu">
+									    <li><a href="#">已审查</a></li>
+									    <li><a href="#">未审查</a></li>
+									  </ul>
+									</div>
+								</div>
+								<div class="commentDetailOth commentDetailOth1 floatRight">
+									<span>日期：</span>
+									<span>2014-05-29</span>
+								</div>
+								<div class="commentDetailOth commentDetailOth1 floatRight">
+									<span>用户：</span>
+									<span>我呵呵了</span>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+						<div class="insertCommon"></div>
+					</div>
+				</div>
+				<div class="finishCommon">
+					<div class="commentsOrder">
+						<div class="detailCom">
+							<div class="commentContent">
+								卖家说72小时内发货，你要能等就下单。我等了整两天说退款了，终于发货。鞋尺码无误，卖相不错，鞋底一如传说中(前人评价)那么硬，让我怀疑这是不是真品。如果你真买去当球鞋那你就完蛋了，哇哈哈！夏天穿的，面料较薄，没有内棉，舒适性可能不太好。当然它的洞洞很多，透气性很好。
+							</div>
+							<div class="commentOther floatRight">
+								<div class="commentDetailOth  floatRight">
+									<span>状态：</span>
+									<div class="btn-group">
+									  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+									    已审查 <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu" role="menu">
+									    <li><a href="#">已审查</a></li>
+									    <li><a href="#">未审查</a></li>
+									  </ul>
+									</div>
+								</div>
+								<div class="commentDetailOth commentDetailOth1 floatRight">
+									<span>日期：</span>
+									<span>2014-05-29</span>
+								</div>
+								<div class="commentDetailOth commentDetailOth1 floatRight">
+									<span>用户：</span>
+									<span>我呵呵了</span>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+						<div class="insertCommon"></div>
+					</div>
+				</div>
+				<div class="allStatisticsList">
+					<form action="php/upload.php" method="post">
+						<input type="text" class="form-control" placeholder="输入今日支出">
+						<input type="submit" class="pay btn btn-info" name="submit" value="提交" />
+					</form>
+					<table class="totalStatistics">
+						<tbody>
+							<tr class="totalProfi">
+								<td class="StatisticsTr1">总利润</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+							<tr class="todayIncome">
+								<td class="StatisticsTr1">今日收入费用</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+							<tr class="todayProfit">
+								<td class="StatisticsTr1">今日利润</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+							<tr class="totalSave">
+								<td class="StatisticsTr1">总为用户节省的费用</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+							<tr class="totalOrder">
+								<td class="StatisticsTr1">总订单数</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+							<tr class="totalUnfinishedOrder">
+								<td class="StatisticsTr1">总未完成订单数</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+							<tr class="todayOrder">
+								<td class="StatisticsTr1">今日订单数</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+							<tr class="todayUnfinishedOrder">
+								<td class="StatisticsTr1">今日未完成订单数</td>
+								<td class="StatisticsTr2"></td>
+							</tr>
+						</tbody>
+					</table>
+					<button  type="button" class="btn btn-primary include">数据入库</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			var optionValueBox=$(".optionPriceBox").html();//不同参数价框的参数
+			var GLOuser=new Array(),GLOkinds=new Array(),GLOstore=new Array(),GLOaddress=new Array(),GLOGroup=new Array(),GLOGoodsId;
+			var clickFlag=0;
+			var newsGoodsInsert="<div class=\"newGoods\">"+$(".newGoods").html()+"</div>";
+			var flagNum=0;
+			var finishOrderFlag=0;//下单计数
+			var payStatus;//今日支出状态
+			$(document).ready(function () {
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'init'},
+				}).done(function(data) {
+					var initValue=$.parseJSON(data);
+					if(initValue!=null){
+						AllListFun(initValue);
+					}
+				})
+			})
+			$(".include").click(function(){
+				$.ajax({
+						type:'post',
+						url:'php/houtai.php',
+						data:{"func":'includeFunc'
+						}
+					}).done(function(data) {
+						status=$.parseJSON(data);
+						if(!status){
+							alert("艹然出bug了！！快去找他吧！！");
+						}});
+				})
+			$(".allStatisticsList pay").click(function(){
+				if(parseInt(payStatus)==0){
+					alert("今日已经填写过了");
+				}
+				else{
+					$.ajax({
+						type:'post',
+						url:'php/houtai.php',
+						data:{"func":'postPay',
+						"money":$(".payMoney").value()
+						}
+					}).done(function(data) {
+						status=$.parseJSON(data);
+						if(status){
+							$(".payMoney").value("");
+							alert("已提交成功，不要点了");
+
+						}
+						else{
+							alert("提交失败，找艹然吧")
+						}
+					})
+				}
+			})
+			$(".newCreate").click(changeSearch);
+			$(".goodsUploadPic button").click(function() {
+				$(this).next().css("display","block").children("input").click();
+			});
+			$(".newsOption").click(createOptValue);
+			$(".createOptionValue input").blur(createOpt);
+			$(".newsOptionBox").click(function() {//创建新的参数输入框
+				var textMain="<div class=\"optionMain\"><input type=\"text\" class=\"form-control optionValue optionName\" placeholder=\"参数名字\"><span class=\"optioncode\">：</span><div class=\"createOptionValue floatLeft\"><div class=\"optionDetail newsOption optionValue \"><span>新建</span><span class=\"glyphicon glyphicon-plus size\"><span></span></span></div><input type=\"text\" class=\"form-control optionValue optionTxt\" placeholder=\"参数值\"></div><div class=\"clear\"></div><div class=\"optDelete\"><span class=\"glyphicon glyphicon-remove\"></span></div></div>";
+				$(this).before(textMain);
+				$(".newsOption").click(createOptValue);
+				$(".createOptionValue input").blur(createOpt);
+				$(".optionMain .optionName").blur(getOpt);
+				$(".optionDetail .flagSize").click(deleteOptValue);//删除参数值
+				$(".optDelete span").click(deleteOpt);//删除参数
+			});
+			$(".kindsCreate").click(function() {//创建分类
+				var status;
+				for(i=0;i<$(".kinds goodsKindsName").length;i++){
+					if($(".kinds goodsKindsName").eq(i).find("input").val()=="")
+						status=false;
+				};
+				if(!status){
+					alert("请先把之前的分类完成好 再来创建！");
+				}
+				else{
+					var textMain="<div class=\"row goodsKindsName floatLeft\"><div class=\"col-lg-6 kindsWidth\"><div class=\"input-group\"><div class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">分层 <span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"newCreate\"><a>新建</a></li></ul></div><!-- /btn-group --><input type=\"text\" class=\"form-control\" placeholder=\"分类\"></div><!-- /input-group --></div><div class=\"kindsDelete\"><span class=\"glyphicon glyphicon-remove\"></span></div></div>";
+					$(this).before(textMain);
+					$(".newCreate").click(changeSearch);
+					addKindsFun($(".kinds goodsKindsName").eq($(".kinds goodsKindsName").length-1));
+					$(".kindsDelete span").click(deleteKinds);//删除分类
+				}
+				
+			});
+			$(".optionPriceDelete").click(deletOPTPriceValue);
+			$(".optionMain .optionName").blur(getOpt);//通过输入参数名时失去焦点来判断是否在参数价格那创建一个参数
+			$(".optDelete span").click(deleteOpt);//删除参数
+			$(".kindsDelete span").click(deleteKinds);//删除分类
+			$(".optionDetail .flagSize").click(deleteOptValue);//删除参数值
+			$(".optionPriceCreate").click(createOptPrice);
+			$(".goodsEdite button").click(function() {//商品编辑绑定
+				var name=$(this).parents(".goodsOrder").find(".goodsName").children().text();
+				editGoodsFun(name);
+			});
+			$("#forList").click(function(){//显示所有商品
+				showDetailContent("goodsList");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				goodsShowFun("");
+			});
+			$("#forList").click();
+			$("#forOldsList").click(function(){//显示已下架商品
+				showDetailContent("deleteGoodsList");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				goodsDeleteShowFun("");
+			});
+			$("#forNewsList").click(function(){//新建物品的显示以及对于其他的不显示
+				$(".newGoods").after(newsGoodsInsert);
+				$(".newGoods").eq(0).remove();
+				/*******************绑定事件*****************************/
+				$(".newCreate").click(changeSearch);
+				$(".goodsUploadPic button").click(function() {
+					$(this).next().css("display","block").children("input").click();
+				});
+				$(".newsOption").click(createOptValue);
+				$(".createOptionValue input").blur(createOpt);
+				$(".newsOptionBox").click(function() {//创建新的参数输入框
+					var textMain="<div class=\"optionMain\"><input type=\"text\" class=\"form-control optionValue optionName\" placeholder=\"参数名字\"><span class=\"optioncode\">：</span><div class=\"createOptionValue floatLeft\"><div class=\"optionDetail newsOption optionValue \"><span>新建</span><span class=\"glyphicon glyphicon-plus size\"><span></span></span></div><input type=\"text\" class=\"form-control optionValue optionTxt\" placeholder=\"参数值\"></div><div class=\"clear\"></div><div class=\"optDelete\"><span class=\"glyphicon glyphicon-remove\"></span></div></div>";
+					$(this).before(textMain);
+					$(".newsOption").click(createOptValue);
+					$(".createOptionValue input").blur(createOpt);
+					$(".optionMain .optionName").blur(getOpt);
+					$(".optionDetail .flagSize").click(deleteOptValue);//删除参数值
+					$(".optDelete span").click(deleteOpt);//删除参数
+				});
+				$(".kindsCreate").click(function() {//创建分类
+					var status;
+					for(i=0;i<$(".kinds goodsKindsName").length;i++){
+						if($(".kinds goodsKindsName").eq(i).find("input").val()=="")
+							status=false;
+					};
+					if(!status){
+						alert("请先把之前的分类完成好 再来创建！");
+					}
+					else{
+						var textMain="<div class=\"row goodsKindsName floatLeft\"><div class=\"col-lg-6 kindsWidth\"><div class=\"input-group\"><div class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">分层 <span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li class=\"newCreate\"><a>新建</a></li></ul></div><!-- /btn-group --><input type=\"text\" class=\"form-control\" placeholder=\"分类\"></div><!-- /input-group --></div><div class=\"kindsDelete\"><span class=\"glyphicon glyphicon-remove\"></span></div></div>";
+						$(this).before(textMain);
+						$(".newCreate").click(changeSearch);
+						addKindsFun($(".kinds goodsKindsName").eq($(".kinds goodsKindsName").length-1));
+						$(".kindsDelete span").click(deleteKinds);//删除分类
+					}		
+				});
+				$(".optionPriceDelete").click(deletOPTPriceValue);
+				$(".optionMain .optionName").blur(getOpt);//通过输入参数名时失去焦点来判断是否在参数价格那创建一个参数
+				$(".optDelete span").click(deleteOpt);//删除参数
+				$(".kindsDelete span").click(deleteKinds);//删除分类
+				$(".optionDetail .flagSize").click(deleteOptValue);//删除参数值
+				$(".optionPriceCreate").click(createOptPrice);
+				$(".createGoodsSubmit").click(function(){
+					var storeName=$(".newGoods .newGoodsStoreName .goodsStoreName input").val();
+					var storeUrl=$(".newGoodsStoreUrl input").val();
+					var title=$(".newGoodsName input").val();
+					var TBPrice=$(".price .taobaoPrice input").val();
+					var PDPrice=$(".price .pindanPrice input").val();
+					var purchase=$(".purchase input").val();
+					var keyword=$(".keyword input").val();
+					var option=new Array();
+					for(i=0;i<$(".option .optionMain").length;i++){
+						var OPTVal='';
+						for(d=0;d<$(".option .optionMain").eq(i).children(".optionDetail").length;d++){
+								if(OPTVal!='')
+									OPTVal=OPTVal+"&"+$(".option .optionMain").eq(i).children(".optionDetail").eq(d).children("span").eq(0).text();
+								else
+									OPTVal=$(".option .optionMain").eq(i).children(".optionDetail").eq(d).children("span").eq(0).text();
+						};
+						option[i]={name:$(".option .optionName").val(),value:OPTVal};
+					};
+					var OPTPrice = new Array();
+					for(var i=0;i<$(".optionPrice .optionPriceBox").length;i++){
+						var OPTValue = new Array();
+						var OPTTBPrice,OPTPDPrice;
+						for( var d=0;d<$(".optionPrice .optionPriceBox").eq(i).children(".optionPriceName").length;d++){
+							OPTValue[d]=$(".optionPrice .optionPriceBox").eq(i).children(".optionPriceName").eq(d).find("input").val();
+						};
+						OPTPrice[i]={OPTValue:OPTValue,OPTTBPrice:$(".optionPrice .optionPriceBox").eq(i).children(".optionTBPriceMiniBOx").find("input").val(),OPTPDPrice:$(".optionPrice .optionPriceBox").eq(i).children(".optionPDPriceMiniBOx").find("input").val()};
+					}; 
+					var kinds='';
+					for(i=0;i<$(".kindsBox .goodsKindsName").length;i++){
+						if(kinds!='')
+							kinds=kinds+'-'+$(".kindsBox .goodsKindsName").eq(i).find("input").val();
+						else
+							kinds=$(".kindsBox .goodsKindsName").eq(i).find("input").val();
+					};
+					var goods={"storeName":storeName,"storeUrl":storeUrl,"title":title,"TBPrice":TBPrice,"PDPrice":PDPrice,"purchase":purchase,"keyword":keyword,"option":option,"OPTPrice":OPTPrice,"kinds":kinds};
+					if($(".newGoods").attr("editType")==1){
+						type=1;
+					}
+					else 
+						type=0
+					$.ajax({
+						type:'post',
+						url:'php/houtai.php',
+						data:{"func":'goodsCreate',
+						"goods":goods,
+						"type":type
+						}
+					}).done(function(data) {
+						$(".newGoods").attr("editType",0);
+						data=$.parseJSON(data);
+						if(data==""||data==false){
+							alert("艹然出bug了！！快去找他吧！！")
+						}
+						else{
+							alert("已经成功了，不要再点击了！");
+							$(".newGoods .newGoodsPic").css("display","block");
+							$(".hiddenInput").attr("value",data);
+						}
+					});//商品创建或者编辑提交
+				});
+				/*******************绑定事件结束*****************************/
+				showDetailContent("newGoods");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				
+				
+				
+				if($(".newGoods").attr("status")==undefined){
+					addStoreName($(".newGoodsStoreName"),0);
+					$(".newGoods").attr("status",1);
+					addKindsFun($(".kinds .goodsKindsName"));
+				};
+			});
+			$("#allOrder").click(function () {//显示所有订单
+				showDetailContent("allOrderList");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				orderShowFun('6','','allOrder');
+			});
+			$("#finishedOrder").click(function(){//显示已审核订单的
+				showDetailContent("orderOperateFinished");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				operateOrderFun();
+			});
+			$("#finishOrder").click(function(){//显示未审核的订单
+				showDetailContent("orderOperateFinish");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				operateFinishOrderFun();
+			});
+			$("#orderNumAdd").click(function(){//显示需要添加订单好的订单
+				showDetailContent("orderNumDetail");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				showOrderNumber();
+			});
+			$("#printOrder").click(function(){//显示需要打印的订单
+				showDetailContent("printOrderButton");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+			})
+			$("#NotWillOrder").click(function(){//到付未付款
+				showDetailContent("allWillNotOrderList");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				showWillOrderFun('OrderForOffline');
+				/*showCommonFun("","","allCommen");*/
+			});
+			$("#AllStatistics").click(function(){//统计显示**************************/
+				showDetailContent("allStatisticsList");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				showStatisticsFun();
+			})
+			$("#willOrdered").click(function(){//到付已付款
+				showDetailContent("allWillOrderList");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				showWillOrderFun("OrderForOfflined");
+			});
+			$("#allCommon").click(function(){//点击所有评论的显示
+				showDetailContent("comments");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				showCommonFun("","","allCommen");
+
+			});
+			$("#finishedCommon").click(function(){//点击已审核评论的显示
+				showDetailContent("finishedCommon");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				showCommonFun("","","finishedCommon");
+			});
+			$("#finishCommon").click(function(){//点击未审核评论的显示
+				showDetailContent("finishCommon");
+				$(this).parent().children().attr("class","");
+				$(this).attr("class","active");
+				showCommonFun("","","finishCommon");
+			});
+			$(".goodsList .btn-danger").click(function(){//下架商品时点击按钮触发
+				if(confirm("您确定真的要使商品下架吗？后果很危险哦！！！快去跟小伙伴商量好了在来操作吧")){
+					var name=$(this).parents(".goodsOrder").children(".goodsName").children("p").text();
+					deleteGoodsFun(name,$(this));
+				}
+			});
+			$(".goodsList .dropdown .dropdown-menu li").click(function(){//商品列表通过选择商家名来查找商品
+				var name=$(this).children("a").text();
+				goodsShowFun(name);
+			});
+			$(".goodsList .dropdown .dropdown-menu .divider").next().click(function(){//点击搜索时使focus到商品列表search输入框
+				$(".goodsList .search .searchText").focus();
+			});
+			$(".goodsList .search .submit").click(function(){//search输入框中的商家名进行search下架商品
+				var name=$(this).prev(".searchText").val();
+				goodsShowFun(name);
+			});
+			$(".deleteGoodsList .btn-danger").click(function(){//上架商品时点击按钮触发
+				if(confirm("您确定真的要使商品上架吗？小心操作哦！！！快去跟小伙伴商量好了在来操作吧")){
+					var name=$(this).parents(".goodsDeleteOrder").children(".goodsName").children("p").text();
+					pushGoodsFun(name,$(this));
+				}
+			});
+			$(".deleteGoodsList .dropdown .dropdown-menu li").click(function(){//下架商品列表通过选择商家名来查找商品
+				var name=$(this).children("a").text();
+				goodsDeleteShowFun(name);
+			});
+			$(".deleteGoodsList .dropdown .dropdown-menu .divider").next().click(function(){//点击搜索时使focus到下架商品列表search输入框
+			$(".deleteGoodsList .searchDelete .searchText").focus();
+			});
+			$(".deleteGoodsList .searchDelete .submit").click(function(){//search输入框中的商家名进行search下架商品
+				var name=$(this).prev(".searchText").val();
+				goodsDeleteShowFun(name);
+			});
+			$(".createGoodsSubmit").click(function(){
+				var storeName=$(".newGoods .newGoodsStoreName .goodsStoreName input").val();
+				var storeUrl=$(".newGoodsStoreUrl input").val();
+				var title=$(".newGoodsName input").val();
+				var TBPrice=$(".price .taobaoPrice input").val();
+				var PDPrice=$(".price .pindanPrice input").val();
+				var purchase=$(".purchase input").val();
+				var keyword=$(".keyword input").val();
+				var option=new Array();
+				for(i=0;i<$(".option .optionMain").length;i++){
+					var OPTVal='';
+					for(d=0;d<$(".option .optionMain").eq(i).children(".optionDetail").length;d++){
+							if(OPTVal!='')
+								OPTVal=OPTVal+"&"+$(".option .optionMain").eq(i).children(".optionDetail").eq(d).children("span").eq(0).text();
+							else
+								OPTVal=$(".option .optionMain").eq(i).children(".optionDetail").eq(d).children("span").eq(0).text();
+					};
+					option[i]={name:$(".option .optionName").val(),value:OPTVal};
+				};
+				var OPTPrice = new Array();
+				for(var i=0;i<$(".optionPrice .optionPriceBox").length;i++){
+					var OPTValue = new Array();
+					var OPTTBPrice,OPTPDPrice;
+					for( var d=0;d<$(".optionPrice .optionPriceBox").eq(i).children(".optionPriceName").length;d++){
+						OPTValue[d]=$(".optionPrice .optionPriceBox").eq(i).children(".optionPriceName").eq(d).find("input").val();
+					};
+					OPTPrice[i]={OPTValue:OPTValue,OPTTBPrice:$(".optionPrice .optionPriceBox").eq(i).children(".optionTBPriceMiniBOx").find("input").val(),OPTPDPrice:$(".optionPrice .optionPriceBox").eq(i).children(".optionPDPriceMiniBOx").find("input").val()};
+				}; 
+				var kinds='';
+				for(i=0;i<$(".kindsBox .goodsKindsName").length;i++){
+					if(kinds!='')
+						kinds=kinds+'-'+$(".kindsBox .goodsKindsName").eq(i).find("input").val();
+					else
+						kinds=$(".kindsBox .goodsKindsName").eq(i).find("input").val();
+				};
+				var goods={"storeName":storeName,"storeUrl":storeUrl,"title":title,"TBPrice":TBPrice,"PDPrice":PDPrice,"purchase":purchase,"keyword":keyword,"option":option,"OPTPrice":OPTPrice,"kinds":kinds};
+				if($(".newGoods").attr("editType")==1){
+					type=1;
+				}
+				else 
+					type=0
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'goodsCreate',
+					"goods":goods,
+					"type":type
+					}
+				}).done(function(data) {
+					$(".newGoods").attr("editType",0);
+					data=$.parseJSON(data);
+					if(data==""||data==false){
+						alert("艹然出bug了！！快去找他吧！！")
+					}
+					else{
+						alert("已经成功了，不要再点击了！");
+						$(".newGoods .newGoodsPic").css("display","block");
+						$(".hiddenInput").attr("value",data);
+					}
+				});//商品创建或者编辑提交
+			});
+			$(".opeTit .BGoods").click(function(){//点击显示总的分类
+				$(".opeContent").children().css("display",'none');
+				$(".opeContent").children(".goodsList").css("display","block");/*
+				$(".BGoods").next().find("ul").children().attr("class","");
+				$(".BGoods").next().find("ul").children("li").eq(0).attr("class","active");*/
+				$("#forList").click();
+			});
+			$(".opeTit .BOrder").click(function(){//点击显示总的分类
+				$(".opeContent").children().css("display",'none');
+				$(".opeContent").children(".allOrderList").css("display","block");/*
+				$(".BOrder").next().find("ul").children().attr("class","");
+				$(".BOrder").next().find("ul").children("li").eq(0).attr("class","active");*/
+				$("#allOrder").click();
+			});
+			$(".opeTit .BWillOrder").click(function(){//点击显示到付未付款
+				$(".opeContent").children().css("display",'none');
+				$(".opeContent").children(".allOrderList").css("display","block");/*
+				$(".allOrderList").next().find("ul").children().attr("class","");
+				$(".allOrderList").next().find("ul").children("li").eq(0).attr("class","active");*/
+				$("#NotWillOrder").click();
+			});
+			$(".opeTit .BStatistics").click(function(){//点击显示统计
+				$(".opeContent").children().css("display",'none');
+				$(".opeContent").children(".allWillNotOrderList").css("display","block");/*
+				$(".allOrderList").next().find("ul").children().attr("class","");
+				$(".allOrderList").next().find("ul").children("li").eq(0).attr("class","active");*/
+				$("#AllStatistics").click();
+			})
+			$(".opeTit .BCommon").click(function(){//点击显示总的评论
+				$(".opeContent").children().css("display",'none');
+				$(".opeContent").children(".comments").css("display","block");/*
+				$(".allOrderList").next().find("ul").children().attr("class","");
+				$(".allOrderList").next().find("ul").children("li").eq(0).attr("class","active");*/
+				$("#allCommon").click();
+			});
+			$(".orderOperateFinish .orderStore button").click(function(){
+				$(this).text("下单中");
+			})
+			/**********************************************************/
+			function showStatisticsFun() {//统计请求
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":"Statistics"
+					}
+				}).done(function(data) {
+					statistics=$.parseJSON(data);
+					if(statistics==null||statistics==undefined){
+						alert("艹然出bug了！！快去找他吧！！");
+					}
+					else{
+						payStatus=statistics.status;
+						$(".totalProfi").children(".StatisticsTr2").text(statistics.totalProfi);
+						$(".todayIncome").children(".StatisticsTr2").text(statistics.todayIncome);
+						$(".todayProfit").children(".StatisticsTr2").text(statistics.todayProfit);
+						$(".totalSave").children(".StatisticsTr2").text(statistics.totalSave);
+						$(".totalOrder").children(".StatisticsTr2").text(statistics.totalOrder);
+						$(".totalUnfinishedOrder").children(".StatisticsTr2").text(statistics.totalUnfinishedOrder);
+						$(".todayOrder").children(".StatisticsTr2").text(statistics.todayOrder);
+						$(".todayUnfinishedOrder").children(".StatisticsTr2").text(statistics.todayUnfinishedOrder);
+					}
+				})
+			}
+			function showWillOrderFun(func){//已付款以及未付款的到付订单
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":func
+					}
+				}).done(function(data) {
+					orders=$.parseJSON(data);
+					if(orders.length!=0&&orders.length!=undefined){
+						/*$(".willNotOrderGoodsList").remove();*/
+						$(".willNotOrderList").remove();
+						for(i=0;i<orders.length;i++){
+							var insertGoods="";
+							for(d=0;d<orders[i].goods.length;d++){
+								var insertOPt="";
+								for(m=0;m<orders[i].goods[d].optname.length;m++){
+									if(orders[i].goods[d].optname[m]==''){
+										break;
+									}
+									insertOPt=insertOPt+orders[i].goods[d].optname[m]+" : "+orders[i].goods[d].optvalue[m]+" ";
+								};
+								insertGoods=insertGoods+"<div class=\"willNotOrderGoodsList\"><div class=\"orderGoodsPic floatLeft\"><img src=\""+orders[i].goods[d].pic+"\"></div><div class=\"orderGoodsDetail borderLeft floatLeft\"><p>"+orders[i].goods[d].title+"</p><p>"+insertOPt+"</p></div><div class=\"orderGoodsNum borderLeft floatLeft\"><span>"+orders[i].goods[d].num+"</span><span>个</span></div><div class=\"orderGoodsPrice borderLeft floatLeft\"><span>￥</span><span>"+orders[i].goods[d].PDPrice+"</span><span>/</span><span>￥</span><span>"+orders[i].goods[d].TBPrice+"</span></div><div class=\"orderGoodsTotal borderLeft floatLeft\"><span>￥</span><span>"+orders[i].goods[d].totalPrice+"</span></div></div>"
+							};
+							var status='';
+							if(orders[i].status==0){
+								status='下单';
+								statusClass="willNotOrderButtonFlag";
+							}
+							else{
+								status='撤销下单';
+								statusClass="willOrderButtonFlag";
+							}
+							var insertContent="<div status=\""+orders[i].id+"\" class=\"willNotOrderList\"><div class=\"willOrderListHead\"><div class=\"willNotHeadTop headBox floatLeft\"><span>用户:</span><span>"+orders[i].user+"<span></span></span></div><div class=\"willNotHeadTop headBox floatLeft\"><span>电话:</span><span>"+orders[i].tel+"<span></span></span></div><div class=\"willNotHeadTop headBox floatLeft\"><span>时间:</span><span>"+orders[i].date+"<span></span></span></div><div class=\"willNotHeadTop headBox floatLeft\"><span>总价:</span><span>"+orders[i].price+"<span></span></span></div><div class=\"willNotHeadTop willNotHeadButton headBox floatLeft\"><button type=\"button\" class=\"btn "+statusClass+" btn-warning\">"+status+"</button></div><div class=\"willNotHeadTop willNotHeadButton headBox floatLeft\"><button type=\"button\" class=\"btn btn-danger\">删除</button></div><div class=\"clear\"></div></div>"+insertGoods+"</div>";
+							if(parseInt(orders[i].status)==0&&orders[i].goods!=''){
+								$(".allWillNotOrderList").children(".willNotOrderListFLag").before(insertContent);
+							}
+							else if(parseInt(orders[i].status)==1&&orders[i].goods!=''){
+								$(".allWillOrderList").children(".willOrderListFLag").before(insertContent);
+							}	
+						}
+						$(".willNotOrderButtonFlag").click(function(){
+							var r=confirm("确认下单吗？");
+							if(r){
+									$.ajax({
+										type:'post',
+										url:'php/houtai.php',
+										data:{"func":"ChangeOfflineOrderStatus",
+											"orderid":$(this).parents(".willNotOrderList").attr("status")
+										}
+									}).done(function(data) {
+										status=$.parseJSON(data);
+										if(status){
+											alert("下单成功不需要再点击了!");
+											$("this").parents(".willNotOrderList").remove()
+										}
+										else
+											alert("下单失败 我也不知道为什么 找艹然吧！")
+									})
+							}
+						})
+						$(".willOrderButtonFlag").click(function(){
+							var r=confirm("确认撤销下单吗？");
+							if(r){
+									$.ajax({
+										type:'post',
+										url:'php/houtai.php',
+										data:{"func":"CancelOfflineOrderStatus",
+											"orderid":$(this).parents(".willNotOrderList").attr("status")
+										}
+									}).done(function(data) {
+										status=$.parseJSON(data);
+										if(status){
+											alert("撤销成功!");
+											$("this").parents(".willNotOrderList").remove()
+										}
+										else
+											alert("撤销失败 我也不知道为什么 找艹然吧！")
+									})
+							}
+						})
+						$(".willNotOrderList .btn-danger").click(function(){
+							var r=confirm("确认删除吗？不是闹着玩的哦");
+							if(r){
+									$.ajax({
+										type:'post',
+										url:'php/houtai.php',
+										data:{"func":"deleteWillOrder",
+											"orderid":$(this).parents(".willNotOrderList").attr("status")
+										}
+									}).done(function(data) {
+										status=$.parseJSON(data);
+										if(status){
+											alert("删除成功!");
+											$("this").parents(".willNotOrderList").remove()
+										}
+										else
+											alert("删除失败 我也不知道为什么 找艹然吧！")
+									})
+							}
+						})
+					}
+				})
+			}
+			function showOrderNumber(){
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":"orderNumber"
+					}
+				}).done(function(data) {
+					orders=$.parseJSON(data);
+					if(orders.length!=0||orders!=''){
+						$(".orderNumber").remove();
+						for(i=0;i<orders.length;i++){
+							insertContent="<div class=\"orderNumber\"><p class=\"orderNumberStore orderNumberCommon\">"+orders[i].storeName+"</p><p class=\"orderNumberAddress orderNumberCommon\">"+orders[i].address+"</p><p class=\"orderNumberDate orderNumberCommon\">"+orders[i].date+"</p><div class=\"orderNumBox\"><input type=\"text\" class=\"form-control orderNumberTxt\" placeholder=\"订单号\"><input type=\"text\" class=\"form-control expressNum\" placeholder=\"快递公司代码\"><button type=\"button\" class=\"btn btn-primary\">提交</button></div></div>";
+							$(".orderNumDetail").children(".flagOderNumber").before(insertContent);
+						};
+						var tempOrderNum;
+						$(".orderNumber .orderNumBox button").click(function(){
+							var obj=$(this);
+							if(flagNum==1){
+								flagNum=0;
+								if($(".orderNumberTxt").val()==tempOrderNum){
+									var postOrder={"storeName":$(this).parents(".orderNumber").children(".orderNumberStore").text(),"address":$(this).parents(".orderNumber").children(".orderNumberAddress").text(),"date":$(this).parents(".orderNumber").children(".orderNumberDate").text(),"number":$(this).parents(".orderNumBox").children("input").val(),"express":$(".expressNum").val()};
+									$.ajax({
+										type:'post',
+										url:'php/houtai.php',
+										data:{"func":'orderNumberCreate',
+										"order":postOrder
+										}
+									}).done(function(data) {
+										data=$.parseJSON(data);
+										if(data==""||data==false){
+											alert("艹然出bug了！！快去找他吧！！")
+										}
+										else{
+											alert("已经成功了，不要再点击了！");
+											obj.parents(".orderNumber").remove()
+										}
+									});//商品订单号提交
+								}
+								else{
+									alert("重新输入两遍")
+								}
+							}
+							else{
+								tempOrderNum=$(".orderNumberTxt").val(); 
+								alert("再输入一遍");
+								$(".orderNumberTxt").val("")
+								flagNum++;
+								if(flagNum==2)
+									flagNum==0;
+							}
+						})
+					}
+					else{
+						alert("艹然出bug了！！快去找他吧！！");
+					};
+				});
+			}
+			function showCommonFun(type,value,func){//评论的显示
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":func,
+						"type":type,
+						"value":value
+					}
+				}).done(function(data) {
+					common=$.parseJSON(data);
+					if(common.length!=0||common!=''){
+						$(".common .detailCom").remove();
+						if(func=="allCommen"){
+							addAllkindOfCommon($(".common .commonUserList"),GLOuser,0)
+						}
+						
+						for(i=0;i<common.length;i++){
+							var insertContent="<div class=\"detailCom\"><div class=\"commentContent\">"+common[i].content+"</div><div class=\"commentOther floatRight\"><div class=\"commentDetailOth  floatRight\"><span>状态：</span><div class=\"btn-group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">"+common[i].status+" <span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li><a\>已审查</a></li><li><a\>未审查</a></li></ul></div></div><div class=\"commentDetailOth commentDetailOth1 floatRight\"><span>日期：</span><span>"+common[i].date+"</span></div><div class=\"commentDetailOth commentDetailOth1 floatRight\"><span>用户：</span><span>"+common[i].user+"</span></div><div class=\"clear\"></div></div><div class=\"clear\"></div></div>" ;
+							$(".comments .commentsOrder").children(".insertCommon").before(insertContent);	
+						}
+					}
+					else{
+						alert("艹然出bug了！！快去找他吧！！");
+					};
+				});
+			};
+			function operateOrderFun(){//今日已下订单的显示
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":"finishedOrder",
+					}
+				}).done(function(data) {
+
+					store=$.parseJSON(data);
+					if(store.length!=0&&store.length!=undefined){
+						$(".orderOperateFinished .orderStore").remove();
+						for(i=0;i<store.length;i++){
+							var insertContent="<div class=\"orderStore\"><p class=\"orderNameBG\">"+store[i].name+"</p><button type=\"button\" class=\"btn btn-warning\">下单</button><div class=\"orderNum\"><span class=\"comeFrom\">订单数：</span><span>"+store[i].orderNum+"</span></div></div>";
+							$(".orderOperateFinished").children(".flagOrderOperate").before(insertContent);
+						}
+					}
+					else{
+						alert("超然那里已下订单出bug了")
+					}
+				})
+			}
+			function operateFinishOrderFun(){//今日未下订单的显示
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":"finishOrder",
+					}
+				}).done(function(data) {
+
+					store=$.parseJSON(data);
+					if(store.length!=0&&store.length!=undefined){
+						$(".orderOperateFinish .finishOrderStore").remove();
+						for(i=0;i<store.length;i++){
+							var insertContent="<div class=\"finishOrderStore\"><p class=\"orderNameBG\">"+store[i].name+"</p><button type=\"button\" class=\"btn btn-warning\"><a href=\"php/print.php?storename="+store[i].name+"\" target=\"_blank\">下单</a></button><div class=\"orderNum\"><span class=\"comeFrom\">订单数：</span><span>"+store[i].orderNum+"</span></div></div>";
+							$(".orderOperateFinish").children(".flagOrderFinishOperate").before(insertContent);
+						}
+						$(".finishOrderStore a").click(function(){
+							if(finishOrderFlag==1){
+								finishOrderFlag=0;
+								$(this).parents(".finishOrderStore").remove();
+							}
+							else{
+								finishOrderFlag=1;
+								$(this).text("确认下单");
+								window.open($(this).attr("href"));
+								$(this).attr("href",'');
+							}
+						})
+					}
+					else{
+						alert("超然那里未下订单出bug了")
+					}
+				})
+			}
+			function orderShowFun(type,value,func){//订单的页面加载（所有 今日完成 今日未完成）
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":func,
+						"type":type,
+						"value":value
+					}
+				}).done(function(data) {
+					orders=$.parseJSON(data);
+					if(orders.length!=0&&orders.length!=undefined){
+						$(".orderList").remove();
+						$(".allOrderList .checkHere").remove();
+						$(" allOrderList.orderList").remove();
+						addAllkindOf($(".allOrderList .OrderStoreList"),GLOstore,0);
+						addAllkindOf($(".allOrderList .orderUserList"),GLOuser,1);
+						addAllkindOf($(".allOrderList .orderAddressList"),GLOaddress,2);
+						for(i=0;i<orders.length;i++){
+							var insertGoods="";
+							for(d=0;d<orders[i].goods.length;d++){
+								var insertOPt="";
+								for(m=0;m<orders[i].goods[d].optname.length;m++){
+									if(orders[i].goods[d].optname[m]==''){
+										break;
+									}
+									insertOPt=insertOPt+orders[i].goods[d].optname[m]+" : "+orders[i].goods[d].optvalue[m]+" ";
+								};
+								insertGoods=insertGoods+"<div class=\"orderGoodsList\"><div class=\"orderGoodsPic floatLeft\"><img src=\""+orders[i].goods[d].pic+"\"></div><div class=\"orderGoodsDetail borderLeft floatLeft\"><p>"+orders[i].goods[d].title+"</p><p>"+insertOPt+"</p></div><div class=\"orderGoodsNum borderLeft floatLeft\"><span>"+orders[i].goods[d].num+"</span><span>个</span></div><div class=\"orderGoodsPrice borderLeft floatLeft\"><span>￥</span><span>"+orders[i].goods[d].PDPrice+"</span><span>/</span><span>￥</span><span>"+orders[i].goods[d].TBPrice+"</span></div><div class=\"orderGoodsTotal borderLeft floatLeft\"><span>￥</span><span>"+orders[i].goods[d].totalPrice+"</span></div></div>"
+							}
+							switch (parseInt(orders[i].status)){
+								case 0:
+									orders[i].status="未付款";
+									break;
+								case 1:
+									orders[i].status="已付款未收货";
+									break;
+								case 2:
+									orders[i].status="已收货未评论";
+									break;
+								case 3:
+									orders[i].status="已评论";
+									break;
+							}
+							var insertContent="<div class=\"orderList\"><div class=\"orderListHead\"><div class=\"headStatus headBox  floatLeft\"><span>状态:</span><div class=\"btn-group\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">"+orders[i].status+" <span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"><li><a >未向商家下单</a></li><li><a >未付款</a></li><li><a>已付款</a></li><li><a >已完成</a></li></ul></div></div><div class=\"headStore headTop headBox floatLeft\"><span>商家:</span><span>"+orders[i].stores+"</span></div><div class=\"headUser headTop headBox floatLeft\"><span>用户:</span><span>"+orders[i].user+"<span></span></span></div><div class=\"headAddress headTop headBox floatLeft\"><span>地址:</span><span>"+orders[i].address+"<span></span></span></div><div class=\"headDate headTop headBox floatLeft\"><span>时间:</span><span>"+orders[i].date+"<span></span></span></div><div class=\"headTotal headTop headBox floatLeft\"><span>总价:</span><span>"+orders[i].price+"<span></span></span></div><div class=\"clear\"></div></div>"+insertGoods+"</div>";
+							$(".allOrderList").children(".orderListFLag").before(insertContent)
+						};
+
+					}
+				})
+			}
+			function addKindsFun(obj){//添加分类
+				if(GLOGroup==undefined||GLOGroup.length==0||GLOGroup==null)
+					return false;
+				for (var i = 0; i < GLOGroup.length; i++) {
+					insertContent="<li class=\"checkHere\"><a>"+GLOGroup[i]+"</a></li>";
+					obj.find(".dropdown-menu").children(".divider").before(insertContent);
+				};
+				$(".checkHere").click(requestKinds);
+			};
+			function pushGoodsFun(name,obj){//下架商品重新上架
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'pushGoods',
+					"name":name}
+				}).done(function(data) {
+					data=$.parseJSON(data);
+					if(data){
+						obj.parents(".goodsDeleteOrder").remove();
+					}
+					else{
+						alert("艹然出bug了！！快去找他吧！！")
+					}
+				});
+			}
+			function goodsDeleteShowFun(name){//下架商品的列表按照商家排序 ajax deleteGoodsShow
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'deleteGoodsShow',
+					"name":name}
+				}).done(function(data) {
+					goods=$.parseJSON(data);
+					if(goods){
+						$(".goodsDeleteOrder").remove();
+						addStoreName($(".deleteGoodsList"),2);
+						for(i=0;i<goods.length;i++){
+							insertContent="<div class=\"goodsDeleteOrder\"><div class=\"goodsPic\"><img src=\""+goods[i].img+"\"></div><div class=\"goodsName\"><p>"+goods[i].title+"</p></div><div class=\"goodsPush\"><button type=\"button\" class=\"btn btn-danger\">上架</button></div><div class=\"goodsStore\"><span class=\"comeFrom\">来自：</span><span>"+goods[i].name+"</span></div></div><div class=\"clear\"></div>"
+							$(".deleteGoodsList").children(".goodsFlagOrder").before(insertContent)
+						};
+						$(".deleteGoodsList .btn-danger").click(function(){//上架商品时点击按钮触发
+							if(confirm("您确定真的要使商品上架吗？小心操作哦！！！快去跟小伙伴商量好了在来操作吧")){
+								var name=$(this).parents(".goodsDeleteOrder").children(".goodsName").children("p").text();
+								pushGoodsFun(name,$(this));
+							}
+						});
+					}
+					else{
+						alert("艹然出bug了！！快去找他吧！！")
+					}
+				});
+			}
+			function goodsShowFun(name){//商品列表中的按商家排序 ajax goodsShow
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'goodsShow',
+					"name":name}
+				}).done(function(data) {
+					goods=$.parseJSON(data);
+					if(goods.length!=0&&goods.length!=undefined){
+						$(".goodsOrder").remove();
+						for(i=0;i<goods.length;i++){
+							insertContent="<div class=\"goodsOrder\"><div class=\"goodsPic\"><img src=\""+goods[i].img+"\"></div><div class=\"goodsName\"><p>"+goods[i].title+"</p></div><div class=\"goodsDelete\"><button type=\"button\" class=\"btn btn-danger\">下架</button></div><div class=\"goodsEdite\"><button type=\"button\" class=\"btn btn-warning\">编辑</button></div><div class=\"goodsStore\"><span class=\"comeFrom\">来自：</span><span>"+goods[i].name+"</span></div></div><div class=\"clear\"></div>"
+							$(".goodsList").children(".goodsFlagOrder").before(insertContent);
+							
+						};
+						$(".goodsList .btn-danger").click(function(){//下架商品时点击按钮触发
+							if(confirm("您确定真的要使商品下架吗？后果很危险哦！！！快去跟小伙伴商量好了在来操作吧")){
+								var name=$(this).parents(".goodsOrder").children(".goodsName").children("p").text();
+								deleteGoodsFun(name,$(this));
+							}
+						});
+						$(".goodsList .goodsEdite button").click(function() {//商品编辑绑定
+							var name=$(this).parents(".goodsOrder").find(".goodsName").children().text();
+							editGoodsFun(name);
+						});
+					
+					}
+					else{
+						alert("艹然出bug了！！快去找他吧！！")
+					}
+				});
+			}
+			function editGoodsFun(name){//编辑商品的触发函数 editeGoods
+				
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'editeGoods',
+					"goodsName":name,
+				}
+				}).done(function(data) {
+					var goods=$.parseJSON(data);
+					if(goods!=null){
+						$("#forNewsList").click();
+						$(".newGoods").attr("editType",1);
+						$(".newGoods .newGoodsStoreName .goodsStoreName input").val(goods.storeName);
+						$(".newGoodsStoreUrl input").val(goods.storeUrl);
+						$(".newGoodsName input").val(goods.title);/*
+						$(".newGoodsPic .boxUpload1 input").val(goods.pic[0]);
+						$(".newGoodsPic .boxUpload2 input").val(goods.pic[1]);
+						$(".newGoodsPic .boxUpload3 input").val(goods.pic[2]);
+						$(".newGoodsPic .boxUpload4 input").val(goods.pic[3]);*/
+						$(".price .taobaoPrice input").val(goods.TBPrice);
+						$(".price .pindanPrice input").val(goods.PDPrice);
+						$(".purchase input").val(goods.purchase);
+						$(".keyword input").val(goods.keywords);
+						for(i=0;i<goods.option.length;i++){
+							if(goods.option[i].name=="")
+								break;
+							var OPTVal=goods.option[i].value.split("&");
+							if(i>0){
+								$(".newsOptionBox").click();
+								$(".optionMain").eq(i).find(".optionName").val(goods.option[i].name);
+								$(".optionMain .optionName").blur();
+							};
+							for(d=0;d<OPTVal.length;d++){
+								var textMain="<div class=\"optionDetail optionValue floatLeft\"><span>"+OPTVal[d]+"</span><span class=\"glyphicon glyphicon-remove flagSize size\"><span></div>";
+								$(".optionMain").eq(i).find(".createOptionValue").before(textMain);
+								var optValue=$(".optionMain").eq(i).find(".createOptionValue").prev().children("span:first").text();
+								/*$(this).parent().prev().attr("status",1);*/
+								$(".optionMain").eq(i).attr("status",1);
+								var bigNum,smallNum;
+								for(m=0;m<=$(".optionMain").length;m++){//查找第几个参数中的第几个参数输入值
+									if($(".optionMain").eq(m).attr("status")==1){
+										bigNum=m;
+										$(".optionMain").eq(m).attr("status",0);
+									};
+								};
+								/*if($(".optionPriceName").length<(bigNum+1)){
+									$(".optionMain").eq(m).find(".createOptionValue").prev().remove();
+									alert("先输入参数名");
+									return false;
+								}*/
+								for(m=0;m<$(".optionPriceBox").length;m++){
+									var textOpt="<li class=\"checkHere\"><a>"+optValue+"</a></li>";
+									$(".optionPriceBox").eq(m).find(".optionPriceName").eq(bigNum).find(".dropdown-menu").append(textOpt);
+									$(".checkHere").click(function (){
+										changeVal($(this),0)
+									});
+									$(".optionDetail .flagSize").click(deleteOptValue);//删除参数值
+								};
+							};
+							$(".optionMain").eq(i).find(".optionName").val(goods.option[i].name);							
+						};
+						for(i=0;i<goods.OPTPrice.length;i++){
+							if(i!=0)
+								$(".optionPriceCreate").click();
+							for(d=0;d<goods.OPTPrice[i].OPTValue.length;d++){
+								$(".optionPrice .optionPriceBox").eq(i).children(".optionPriceName").eq(d).find("input").val(goods.OPTPrice[i].OPTValue[d]);
+							}
+							$(".optionPrice .optionPriceBox").eq(i).children(".optionTBPriceMiniBOx").find("input").val(goods.OPTPrice[i].OPTTBPrice);
+							$(".optionPrice .optionPriceBox").eq(i).children(".optionPDPriceMiniBOx").find("input").val(goods.OPTPrice[i].OPTPDPrice)
+						};
+						var kinds=goods.kinds.split("-");
+						for(i=0;i<kinds.length;i++){
+							$(".kindsBox .goodsKindsName").eq(i).find("input").val(kinds[i]);
+						};
+					}
+					else
+						alert("艹然出bug了！！快去找他吧！！");
+				});
+			}
+			function deleteGoodsFun(name,obj){//商品下架触发函数 deleteGoods
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'deleteGoods',
+					"name":name}
+				}).done(function(data) {
+					data=$.parseJSON(data);
+					if(data){
+						obj.parents(".goodsOrder").remove();
+					}
+					else{
+						alert("艹然出bug了！！快去找他吧！！")
+					}
+				});
+				/*obj.parents(".goodsOrder").remove();*/
+			}
+			function addAllkindOfCommon(obj,value,type){//对留言的各种下拉栏进行添加属性********************************
+				if(value==null||value.length==0){
+					return false;
+				};
+				for (var i =  0; i < value.length; i++) {
+					insertContent="<li class=\"checkHere\"><a>"+value[i]+"</a></li>";
+					obj.find(".dropdown-menu").children(".divider").before(insertContent);
+				};
+				$(".checkHere").click(function(){
+					requestCommon(type);
+				});
+			};
+			function addAllkindOf(obj,value,type){//对订单各种下拉栏进行添加属性
+				if(value==null||value.length==0){
+					return false;
+				};
+				for (var i =  0; i < value.length; i++) {
+					insertContent="<li class=\"checkHere\"><a>"+value[i]+"</a></li>";
+					obj.find(".dropdown-menu").children(".divider").before(insertContent);
+				};
+				$(".allOrderList .checkHere").click(function(){
+				/*	if((clickFlag%2)==0){
+						requestOrder(type,$(this));
+					}
+					clickFlag++;*/
+					requestOrder(type,$(this));
+				});
+			}
+			function addStoreName (obj,type) {//增加商店的名字
+				if(GLOstore==null||GLOstore.length==0){
+					return false;
+				}
+				obj.find(".dropdown-menu .checkHere").remove();
+				for (var i =  0; i < GLOstore.length; i++) {
+					insertContent="<li class=\"checkHere\"><a>"+GLOstore[i]+"</a></li>";
+					obj.find(".dropdown-menu").children(".divider").before(insertContent);
+				};
+				$(".checkHere").click(function(){
+					changeVal($(this),type);
+				});
+			};
+			function AllListFun(initValue){//页面初始化回调函数  init内调函数
+				GLOuser=initValue.user,GLOkinds=initValue.kinds,GLOstore=initValue.store,GLOaddress=initValue.address,GLOGroup=GLOkinds;
+				for (var i =  0; i < GLOstore.length; i++) {
+					insertContent="<li class=\"checkHere\"><a>"+GLOstore[i]+"</a></li>";
+					$(".goodsList").find(".dropdown-menu").children(".divider").before(insertContent);
+				};
+				/*for(i=0;i<initValue.goods.length;i++){
+					insertContent="<div class=\"goodsOrder\"><div class=\"goodsPic\"><img src=\""+initValue.goods[i].img+"\"></div><div class=\"goodsName\"><p>"+initValue.goods[i].title+"</p></div><div class=\"goodsDelete\"><button type=\"button\" class=\"btn btn-danger\">下架</button></div><div class=\"goodsEdite\"><button type=\"button\" class=\"btn btn-warning\">编辑</button></div><div class=\"goodsStore\"><span class=\"comeFrom\">来自：</span><span>nike专卖店</span></div><div class=\"goodsSale\"><span class=\"comeFrom\">销售数量：</span><span>200</span></div><div class=\"clear\"></div></div>";
+					$(".goodsList").children(".goodsFlagOrder").before(insertContent);
+				};*/
+				$(".checkHere").click(function(){
+					changeVal($(this),1);
+				});
+				$(".goodsList .btn-danger").click(function(){//下架商品时点击按钮触发
+					if(confirm("您确定真的要使商品下架吗？后果很危险哦！！！快去跟小伙伴商量好了在来操作吧")){
+						var name=$(this).parents(".goodsOrder").children(".goodsName").children("p").text();
+						deleteGoodsFun(name,$(this));
+					}
+				});
+				$(".goodsList .goodsEdite button").click(function() {//商品编辑绑定
+					var name=$(this).parents(".goodsOrder").find(".goodsName").children().text();
+					editGoodsFun(name);
+				});
+			};
+			function showDetailContent(name) {//点击表栏后切换显示信息
+				$(".opeContent").children().css("display","none");
+				var name="."+name;
+				$(".opeContent").children(name).css("display","block");
+			};
+			function createOptPrice() {
+				if($(".optionPriceBox").html()!=undefined){
+					optionValueBox=$(".optionPriceBox").html();
+				}
+				var textMain="<div class=\"optionPriceBox\">"+optionValueBox+"</div>";
+				$(".optionPriceCreate").before(textMain);
+				$(".optionPriceDelete").click(deletOPTPriceValue);
+				$(".checkHere").click(function (){
+					changeVal($(this),0)
+				});
+
+			};
+			function deleteOptValue() {//删除参数值
+				
+				$(this).parents(".optionMain").attr("status",1);
+				$(this).parents(".optionDetail").attr("status",1);
+				var bigNum,smallNum;
+				for(i=0;i<$(".optionMain").length;i++){
+					if($(".optionMain").eq(i).attr('status')==1){
+						bigNum=i;
+						$(".optionMain").eq(i).attr('status',0);
+						for(d=0;d<$(".optionMain").eq(i).children(".optionDetail").length;d++){
+							if($(".optionMain").eq(i).children(".optionDetail").eq(d).attr("status")==1){
+								smallNum=d;
+								$(".optionMain").eq(i).children(".optionDetail").eq(d).attr("status",0);
+								break;
+							};
+							
+						};
+						break;
+					}
+					
+				};
+				
+				for(i=0;i<$(".optionPriceBox").length;i++){
+					$(".optionPriceBox").eq(i).children(".optionPriceName").eq(bigNum).find('.checkHere').eq(smallNum).remove();
+				};
+				$(this).parent().remove();
+			};
+			function deleteKinds() {//删除分类
+				$(this).parent().parent().remove();
+			};
+			function deleteOpt() {//删除参数
+				
+				$(this).parents(".optionMain").attr("status",1);
+				var bigNum;
+				for(i=0;i<$(".optionMain").length;i++){
+					if($(".optionMain").eq(i).attr("status")==1){
+						bigNum=i;
+						$(".optionMain").eq(i).attr("status",0);
+					}
+				};
+				for(i=0;i<$(".optionPriceBox").length;i++){
+					$(".optionPriceBox").eq(i).children(".optionPriceName").eq(bigNum).remove();
+				}
+				$(this).parent().parent().remove();
+			};
+			function deleteOptPriVal() {//删除参数
+				$(this).parent().attr("status",1);
+				$(this).parents(".optionMain").attr('status',1);
+				var bigNum,smallNum;
+				for(i=0;i<$(".optionMain").length;i++){
+					if($(".optionMain").eq(i).attr("status")==1){
+						bigNum=i;
+						$(".optionMain").eq(i).attr("status",0);
+						for(d=0;d<$(".optionMain").eq(i).children(".optionDetail").length;d++){
+							if($(".optionMain").eq(i).children(".optionDetail").eq(d).attr("status")==1){
+								smallNum=d;
+								$(".optionMain").eq(i).children(".optionDetail").eq(d).attr("status",0);
+								break;
+							}
+						}
+					break;
+					}
+
+				};
+				$(".optionPriceName").eq(bigNum).find(".checkHere").eq(smallNum).remove();
+			};
+			function deletOPTPriceValue() {//删除参数价
+				$(this).parents(".optionPriceBox").remove();
+			};
+			function getOpt(){//通过输入参数名时失去焦点来判断是否在参数价格那创建一个参数
+				if($(this).val()!=''){
+					$(this).attr("status",1);
+					var changNum;
+					for(i=0;i<$(".optionMain .optionName").length;i++){
+						if($(".optionMain .optionName").eq(i).attr("status")==1){
+							changNum=i;
+							$(".optionMain .optionName").eq(i).attr("status",0);
+							break;
+						}
+					};
+					for(i=$(".optionPriceBox").eq(0).children(".optionPriceName").length;i<=changNum;i++){
+						var textMain="<div class=\"row optionPriceName floatLeft\"><div class=\"col-lg-6 kindsWidth\"><div class=\"input-group\"><div class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">参数<span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\"></ul></div><!-- /btn-group --><input type=\"text\" class=\"form-control\" placeholder=\"参数\"></div><!-- /input-group --></div></div>";	
+						$(".optionTBPriceMiniBOx").before(textMain);
+					};
+					for(i=0;i<$(".optionPriceBox").length;i++){
+						var optValueName="<span class=\"caret\"></span>";
+						$(".optionPriceBox").eq(i).children(".optionPriceName").eq(changNum).find("button").text($(this).val());
+						$(".optionPriceBox").eq(i).children(".optionPriceName").eq(changNum).find("button").append(optValueName);
+						$(".checkHere").click(function (){
+							changeVal($(this),0)
+						});
+					}
+					
+				};
+			};
+			function changeVal(obj,type) {//type不为0 则将选择的店家值放入input输入框中并像后端发送请求 请求子分类
+				obj.parents(".input-group").children("input").val(obj.children("a").text());
+				var name=obj.children("a").text();
+				switch(type){
+					case 1:
+					goodsShowFun(name);
+					break;
+					case 2:
+					goodsDeleteShowFun(name);
+					break;
+					case 3:
+					orderShowFun(0,name,'allOrder');
+					break;
+				} 
+			};
+			/*  type :  1   商店列表
+						2 	下架商品列表
+						3 	所有订单
+			//商品创建那里得重新写过；；；；；			
+			*/
+			function requestOrder(type,obj){//所有订单的分类请求
+				obj.parents(".input-group").children("input").val($(this).children("a").text());
+				orderShowFun(type,obj.children("a").text(),"allOrder");
+			} 
+			function requestCommon(type){//所有订单的分类请求
+				$(this).parents(".input-group").children("input").val($(this).children("a").text());
+				showCommonFun(type,$(this).children("a").text(),"allCommen");
+			} 
+			function requestKinds() {//选择分类后发送ajax请求 更改GLOGroup
+				$(this).parents(".input-group").children("input").val($(this).children("a").text());
+				var kinds = new Array();
+				for(i=0;i<$(".kinds .goodsKindsName").length;i++){
+					kinds[i]=$(".kinds .goodsKindsName").eq(i).find("input").val()
+				};
+				$.ajax({
+					type:'post',
+					url:'php/houtai.php',
+					data:{"func":'requestKinds',
+					"name":kinds}
+				}).done(function(data) {
+					kindsSon=$.parseJSON(data);
+					if(kindsSon.length==undefined||kindsSon.length==0){
+						alert("这个分类下没有子分类了！")
+					}
+					else{
+						GLOGroup=kindsSon;
+					}
+				});
+			}
+			function changeSearch() {//在选择值中选择搜索 
+				$(this).parents(".input-group").children("input").focus();
+			}
+			function createOptValue() {//点击创建时变成输入框
+				$(this).parent().children("input").css("display","block").focus();
+			}
+			function createOpt() {//判断创建的input输入框是变成新建的样式还是变成值在参数价格中自动添加参数名称
+				if($(this).val()==""){
+					$(this).css("display","none");
+				}
+				else{
+					var textMain="<div class=\"optionDetail optionValue floatLeft\"><span>"+$(this).val()+"</span><span class=\"glyphicon glyphicon-remove flagSize size\"><span></div>";
+					$(this).parent().before(textMain);
+					$(this).val("");
+					$(this).css("display","none");
+					var optValue=$(this).parent().prev().children("span:first").text();
+					/*$(this).parent().prev().attr("status",1);*/
+					$(this).parents(".optionMain").attr("status",1);
+					var bigNum,smallNum;
+					for(i=0;i<=$(".optionMain").length;i++){//查找第几个参数中的第几个参数输入值
+						if($(".optionMain").eq(i).attr("status")==1){
+							bigNum=i;
+							$(".optionMain").eq(i).attr("status",0)
+							/*for(d=0;d<=$(this).parents(".optionMain").eq(i).children(".optionDetail").length;d++){
+								if($(this).parents(".optionMain").eq(i).children(".optionDetail").eq(d).attr("status")==1){
+									smallNum=d;
+									$(this).parents(".optionMain").eq(i).children(".optionDetail").eq(d).attr("status",0);
+								};
+							};*/
+						};
+					};
+					if($(".optionPriceName").length<(bigNum+1)){
+						$(this).parent().prev().remove();
+						alert("先输入参数名");
+						return false;
+					}
+					for(i=0;i<$(".optionPriceBox").length;i++){
+						var textOpt="<li class=\"checkHere\"><a>"+optValue+"</a></li>";
+						$(".optionPriceBox").eq(i).find(".optionPriceName").eq(bigNum).find(".dropdown-menu").append(textOpt);
+						$(".checkHere").click(function (){
+							changeVal($(this),0)
+						});
+						$(".optionDetail .flagSize").click(deleteOptValue);//删除参数值
+					};
+				}
+			}
+		</script>
+	</body>
+</html>

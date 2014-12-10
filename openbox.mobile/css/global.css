@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'dongqinghei';
+  src: url("fonts/dongqinghei W3.otf") format("opentype"), url("fonts/Hiragino Sans GB W3.otf") format("opentype");
+}
+
+/* line 8, ../sass/global.scss */
+html body {
+  font-family: s微软雅黑;
+}

@@ -1,0 +1,43 @@
+.logForm {
+	width: 320px;
+	margin: 0 auto;
+	position: relative;
+	height: 180px;
+	top: 224px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	min-height: 130px;
+	background: #fff;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#ddd));
+	background: -webkit-linear-gradient(top,#fff 0,#ddd 100%);
+	background: -moz-linear-gradient(top,#fff 0,#ddd 100%);
+	background: -ms-linear-gradient(top,#fff 0,#ddd 100%);
+	background: -o-linear-gradient(top,#fff 0,#ddd 100%);
+	background: linear-gradient(top,#fff 0,#ddd 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#dddddd',GradientType=0);
+	border-left: solid 1px #eee;
+	border-right: solid 1px #eee;
+	border-bottom: solid 1px #ccc;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	font-size: 12px;
+}
+.logContent {
+	padding-top: 35px;
+	width: 290px;
+	margin: 0 auto;
+}
+.password {
+	margin: 10px 0 0 0;
+}
+.answer {
+	margin: 20px 0 0 0;
+	width: 74px;
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	background-image: -webkit-linear-gradient(top,#0088cc, #0044cc );
+}
+.answer:hover{
+	background-image: linear-gradient(to bottom, #428bca ,#2d6ca2);
+	background-image: -webkit-linear-gradient(top,#428bca ,#2d6ca2);	
+}

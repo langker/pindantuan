@@ -1,0 +1,164 @@
+.ui-grid-solo{
+	overflow: visible !important;
+}
+body{
+	font-family: 微软雅黑,黑体;
+	background: url("../img/bg.jpg") repeat;
+	background-size: cover;
+}
+.logo p ,.fuli p{
+	text-align: center;
+}
+.logo{
+	margin-top: 15px;
+}
+.logo p{
+	animation: moveLogo 2s;
+	-webkit-animation: moveLogo 2s;
+}
+.logo img{
+	width: 95px;
+}
+@-webkit-keyframes moveLogo{
+	0% {opacity: 0;}
+	100% {opacity: 1}
+}
+.ui-grid-solo{
+	opacity:1;
+	animation: like 2s;
+	-webkit-animation:like 2s;
+}
+@keyframes like{
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes like{
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+.fuli span{
+	color:white;
+	font-size: 1em;
+	position: relative;
+	left:50%;
+	margin-left: -105px;
+	/*border:1px dashed #fff;*/
+	padding: 2px;
+	animation: moveFuli 2s;
+	-webkit-animation: moveFuli 2s;
+}
+@keyframes moveFuli{
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes moveFuli{
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
+}
+.ui-grid-solo p{
+	text-align: center;
+}
+.setP{
+	min-width: 205px;
+	margin: auto;
+	line-height: 53px;
+	position: relative;
+	left: 50%;
+	margin-left: -100px;
+	vertical-align: middle;
+	color: white;
+	font-size: 1.1em;
+	text-shadow: 0px 0px 0px !important;
+	font-weight: 200;
+	width:220px;
+}
+.setP img{
+	vertical-align: top;
+}
+.setMargin{
+	margin-top: 7%;
+}
+.setCenter{
+	width: 70px;
+	margin: auto;
+	text-align: center;
+}
+.setCenter img{
+	width: 63px;
+	animation: navNew 2s infinite;
+	-moz-animation: navNew 2s infinite;	
+	-webkit-animation: navNew 2s infinite;
+	-o-animation: navNew 2s infinite;
+}
+.setCenter .clickme{
+	color: #fff;
+	text-shadow: 0px 0px 0px !important;
+	font-size: 10px;
+}
+.set-nav-position{
+	position: absolute;
+	top: 5%;
+	left: 74%;
+	margin-left: -35px;
+}
+
+@-webkit-keyframes navNew
+{
+	0% {width: 63px;}
+	25%{width: 60px;}
+	50%{width: 55px;}
+	75%{width: 62px;}
+	100%{width: 63px;}
+}
+@keyframes navNew
+{
+	0% {width: 63px;}
+	25%{width: 60px;}
+	50%{width: 55px;}
+	75%{width: 62px;}
+	100%{width: 63px;}
+}
+@-moz-keyframes navNew
+{
+	0% {width: 64px;}
+	25%{width: 60px;}
+	50%{width: 55px;}
+	75%{width: 62px;}
+	100%{width: 64px;}
+}
+@-o-keyframes navNew
+{
+	0% {width: 64px;}
+	25%{width: 60px;}
+	50%{width: 55px;}
+	75%{width: 62px;}
+	100%{width: 64px;}
+}
+.set-s-margin{
+	margin-top: 8%;
+}
+.setP img{
+	padding:0px 20px 0px 20px;
+}
+.copyright{
+	position: absolute;
+	bottom: 0.5%;
+	color:#fff;
+	font-size: 13px;
+	text-shadow: 0px 0px 0px !important;
+	left: 50%;
+	margin-left: -95px;
+}
+.welcome{
+	display: inline-block;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 1000;
+	width: 100%;
+}
+.welcome img{
+	width: 40%;
+	position: relative;
+	left: 59%;
+}

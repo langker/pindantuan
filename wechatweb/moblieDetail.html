@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html> 
+　<head> 
+　 <title>My Page</title> 
+	<meta charset="utf-8">
+　 <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.4.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mobileDetail.css">
+	<style type="text/css">
+	#detail{
+		display: none;
+	}
+  </style>
+</head> 
+
+<body>
+　<div data-role="page" id="detail" data-title="DETAIL">
+　　 <!-- <div data-role="header" data-position="inline">
+　 		<a href="index.html" data-icon="delete">Cancel</a>
+　 		<h1>Edit Contact</h1>
+　 		<a href="index.html" data-icon="check" data-theme="b">Save</a>
+	 </div> -->
+ 	<div data-role="header" id="detailHeader" data-theme="b" data-position="inline">
+	　 <a data-ajax="false" data-icon="home" href="index.html"class="ui-icon-home">主页</a>
+	　 <h1 style="margin:-20px 0">拼单团</h1>
+	　 
+	</div>
+　　 <div data-role ="content" id="detailContent"> 
+		
+	　　<div id="slides2">
+	      <img src="">
+	      <img src="">
+	      <img src="">
+	      <img src="">
+	      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
+	      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+	    </div>
+	    <div class="goodsTitle">
+	    </div>
+	    <div class="goodsPrice">
+	    	<div class="goodsPDPrice">
+	    		<span>拼单价：</span>
+	    		<span>¥</span>
+	    		<span class="goodsPDPriceDetail"></span>
+	    	</div>
+	    	<div class="goodsTBPrice">
+	    		<span>淘宝价：</span>
+	    		<span>¥</span>
+	    		<span class="goodsTBPriceDetail"></span>
+	    	</div>
+	    	<div class="clear"></div>
+	    </div>
+	    <div class="goodsNice">
+	    	<div class="niceDetail">全场包邮</div>
+	    	<div class="niceDetail">隔日到货</div>
+	    	<div class="niceDetail">货到付款</div>
+	    	<div class="clear"></div>
+	    </div>
+	    <a href="index.html" class="nowBuy" data-role="button" data-ajax="false" >立即购买</a>
+	    <a href="test.html" class="next" data-role="button" data-icon="arrow-d" data-ajax="false" data-iconpos="bottom">下一个</a>
+　　 </div><!-- /content -->
+　</div><!-- /page -->
+	<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.mobile-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/mobileDetail.js"></script>
+
+<script>
+
+  $(function() {
+    $('#slides').slidesjs({
+      width: 940,
+      height: 528,
+      navigation: false
+    });
+
+    /*
+      To have multiple slideshows on the same page
+      they just need to have separate IDs
+    */
+    $('#slides2').slidesjs({
+      width: 940,
+      height: 528,
+      navigation: false,
+      start: 3,
+      play: {
+        auto: true
+      }
+    });
+
+    $('#slides3').slidesjs({
+      width: 940,
+      height: 528,
+      navigation: false
+    });
+  });
+</script>
+</body>
+</html>

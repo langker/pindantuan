@@ -1,0 +1,81 @@
+@import "compass/css3";
+@charset "utf-8";
+
+.header{
+	width:100%;
+	height:40px;
+	overflow: hidden;
+}
+.logo{
+	width:100px;
+	img{
+		width: 87px;
+		height: 20px;
+	}
+	float: left;
+	background-color:#90af8e;
+	padding:10px;
+	height:40px;
+}
+.slogan{
+	width: 88px;
+	background: #4ba733;
+	p{
+		color:#fff;
+		font-size: 0.9em;
+	}
+	float: left;
+	padding:10px;
+	height:40px;
+	text-align: center;
+}
+.content{
+	padding-top:15%;
+	margin-bottom: 5px;
+	width:100%;
+}
+.banner{
+	width: 100%;
+	p{	
+		width: 20%;
+		font-size: 0.8em;
+		margin-left:8%;
+		font-weight: 800;
+	}
+}
+.article{
+	padding:15px;
+	.article-item{
+		height: 85px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		position:relative;
+		img{
+			width:85px;
+			height:85px;
+		}
+		.a-title{
+			width:60%;
+			@include inline-block;
+			font-size: 0.9em;
+			line-height: 1.3em;
+			font-weight:500;
+			position: absolute;
+			top:10px;
+			left: 100px;
+		}
+		.time{
+			position:absolute;
+			width:70px;
+			left: 103px;
+			top: 70px;
+			font-size: 0.7em;
+			color:rgba(0,0,0,0.3);
+		}
+    }
+    .setLine{
+    	img{
+    		width: 100%;
+    	}
+    }
+}

@@ -1,0 +1,621 @@
+.content {
+	width: 1024px;
+	margin: 120px auto 0 auto;
+	position: relative;
+}
+.opeTit {
+	width: 170px;
+	position: fixed;
+	top: 120px;
+}
+.panel-heading h4{
+	text-align: center;
+}
+.opeTit .panel-group .panel-default {
+	border-color: #fff;
+}  
+.panel-body .nav-pills>li>a {
+	text-align: center;
+	cursor: pointer;
+}
+.opeContent {
+	margin: 0 0 0 200px;
+	width: 800px;
+	border:1px solid #ddd;
+
+}
+.goodsPic {
+	width: 60px;
+	float: left;
+	margin: 15px 0 5px 0;
+}
+.goodsPic img{
+	width: 100%;
+}
+.goodsList {
+	margin: 28px auto;
+	width: 750px;
+	position: relative;
+	display: none;
+}
+.goodsOrder {
+	width: 100%;
+	border-top: 1px solid #ddd;
+	margin-top: 12px;
+}
+.goodsName {
+	padding: 34px 0 0 74px;
+}
+.goodsStore {
+	float: right;
+	margin-top: 13px;
+	margin-right: 20px;
+	font-size: 13px;
+}
+.goodsDelete {
+	float: right;
+	font-size: 13px;
+	margin-right: 13px;
+}
+.dropdown-menu li {
+	cursor: pointer;
+}
+.goodsPush {
+	float: right;
+	font-size: 13px;
+	margin-right: 13px;
+}
+.goodsEdite {
+	float: right;
+	font-size: 13px;
+	margin-right: 20px;
+}
+.goodsSale {
+	float: right;
+	margin-top: 13px;
+	margin-right: 20px;
+	font-size: 13px;
+}
+.goodsTot {
+	margin-bottom: 15px; 
+}
+.comeFrom {
+	color: #969696;
+}
+.search {
+	width: 203px;
+	background: url(../img/searchCont.png) no-repeat;
+	height: 33px;
+	position: absolute;
+	top: -20px;
+	left: 545px;
+}
+.deleteGoodsList {
+	display: none;
+	margin: 28px auto;
+	width: 750px;
+	position: relative;
+}
+.goodsDeleteOrder {
+	width: 100%;
+	border-top: 1px solid #ddd;
+	margin-top: 12px;
+}
+.searchDelete {
+	width: 203px;
+	background: url(../img/searchCont.png) no-repeat;
+	height: 33px;
+	position: absolute;
+	top: -20px;
+	left: 545px;
+
+}
+.searchText {
+	width: 155px;
+	height: 17px;
+	margin-top: 4px;
+	line-height: 17px;
+	border: none 0;
+	font-size: 12px;
+	color: #444;
+	margin-left: 10px;
+	position: relative;
+	top: -2px;	
+}
+.submit {
+	background: url(../img/ico_common.png) no-repeat;
+	background-position: 0 -7239px;
+	position: relative;
+	left: 0;
+	top: 8px;
+	border: 0;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+.newGoods {
+	position: relative;
+	width: 755px;
+	margin: 32px auto 0 auto;
+	display: none;
+}
+.goodsStoreName {
+	position: relative;
+	top: -27px;
+	left: 72px;
+}
+.goodsTit {
+	position: relative;
+	top: -26px;
+	left: 72px;
+	width: 347px;
+}
+.newGoodsPic #picUpload {
+	position: absolute;
+	left: 364px;
+	top: 166px;
+}
+.goodsUploadPic {
+	margin-top: 10px;
+	position: relative;
+	left: 85px;
+}
+.goodsUploadPic .boxUpload {
+	display: none;
+}
+.goodsUploadPic .boxUpload1 {
+	display: none;
+	position: absolute;
+	width: 191px;
+	overflow: hidden;
+	left: -6px;
+}
+.boxUpload1 input {
+	position: relative;
+	right: 75px;
+}
+.goodsUploadPic .boxUpload2 {
+	display: none;
+	position: absolute;
+	width: 191px;
+	overflow: hidden;
+	left: 186px;
+}
+.boxUpload2 input {
+	position: relative;
+	right: 75px;
+}
+.goodsUploadPic .boxUpload3 {
+	display: none;
+	position: absolute;
+	width: 191px;
+	overflow: hidden;
+	left: 378px;
+}
+.boxUpload3 input {
+	position: relative;
+	right: 75px;
+}
+.goodsUploadPic .boxUpload4 {
+	display: none;
+	position: absolute;
+	width: 191px;
+	overflow: hidden;
+	left: 572px;
+}
+.boxUpload4 input {
+	position: relative;
+	right: 75px;
+}
+.buttonPic {
+	margin: 0 184px 0 0;
+}
+.uploadPrice {
+	width: 86px;
+	position: relative;
+	top: -27px;
+	left: 62px;
+} 
+.allPrice {
+	float: left;
+	margin-right:100px
+}
+.clear {
+	clear: both;
+}
+.price {
+	margin-top: 35px;
+	position: relative;
+	top: 5px;
+}
+.keywordRead {
+	width: 461px;
+	margin: 0 5px 10px 6px;
+}
+.word {
+	position: relative;
+	top: 6px;
+}
+.floatLeft {
+	float: left;
+}
+.floatRight {
+	float: right;
+}
+.option {
+	margin-top: 15px;
+}
+.optionMain {
+	width: 740px;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+	position: relative;
+}
+.optionValue {
+	margin: 5px 10px;
+}
+.optionName {
+	width: 90px;
+}
+.optioncode {
+	position: absolute;
+	top: 9px;
+	left: 106px;
+}
+.optionDetail {
+	height: 30px;
+	background: #747474;
+	padding: 1px 10px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	color: #fff;
+}
+.size {
+	font-size: 4px;
+}
+.optionTxt {
+	width: 85px;
+	display: none;
+	position: absolute;
+	top: -2px;
+}
+.optionMain .newsOption {
+	background-color: #000;
+}
+.newsOptionBox {
+	background: #FA3333;
+}
+.kinds {
+	position: relative;
+}
+.goodsKindsName {
+	width: 320px;
+	margin: 10px 40px 10px 0;
+	position: relative;
+}
+.kindsTitle {
+	margin: 5px 5px 0 0;
+}
+.row .kindsWidth {
+	width: 100%;
+}
+.optionPriceName {
+	width: 170px;
+	margin: 8px -12px 8px 0;
+}
+.optionPriceValue {
+	width: 150px;
+	margin: 8px -12px 8px 25px;
+}
+.optionPrice {
+	height: 250px;
+	position: relative;
+}
+.kindsBox .kindsCreate {
+	background-color: #1CE600;
+}
+.optionPriceCreate {
+	background-color: #0CC1E4;
+} 
+.orderList {
+	background: #ddd;
+	border: 1px solid #ddd;
+	margin: 20px 0;
+}
+.willNotOrderList {
+	background: #ddd;
+	border: 1px solid #ddd;
+	margin: 20px 0;
+}
+.orderGoodsList {
+	width: 730px;
+	margin: 10px auto;
+	height: 100px;
+	background: #fff;
+}
+.willNotOrderGoodsList {
+	width: 730px;
+	margin: 10px auto;
+	height: 100px;
+	background: #fff;
+}
+.allOrderList {
+	width: 760px;
+	margin: 22px auto;
+	display: none;
+}
+.orderOperateFinished {
+	width: 760px;
+	margin: 22px auto;
+	display: none;
+}
+.orderOperateFinish {
+	width: 760px;
+	margin: 22px auto;
+	display: none;
+}
+.orderStore .orderNameBG {
+	padding: 15px;
+	font-size: 20px;
+	font-weight: bolder;
+	word-break: break-word;
+	width: 605px;
+}
+.orderStore button {
+	float: right;
+	margin-top: -56px;
+}
+.orderStore .orderNum{
+	float: right;
+	margin-top: -50px;
+	margin-right: 88px;
+}
+
+.headBox {
+	margin: 10px 12px 4px 16px;
+	font-weight: bold;
+}
+.headBox>:first-child {
+	color: rgba(0, 0, 0, 0.36);
+}
+.orderGoodsPic {
+	width: 76px;
+	margin: 12px 10px 13px 10px;
+}
+.orderGoodsPic img {
+	width: 100%;
+}
+.orderGoodsDetail {
+	width: 360px;
+	padding: 10px 0px 10px 0px;
+}
+.orderGoodsNum {
+	width: 65px;
+	padding: 35px 0px 0px 0px;
+}
+.orderGoodsPrice {
+	padding: 36px 0px 0px 0px;
+	width: 132px;
+}
+.orderGoodsTotal {
+	padding: 36px 0px 0px 0px;
+	width: 77px;
+}
+.borderLeft {
+	border-left: 1px solid #ddd;
+	height: 100px;
+	text-align: center;
+	font-weight: 700;
+} 
+.checkHere {
+	cursor: pointer;
+}
+.newCreate {
+	cursor: pointer;
+}
+.createOptionValue {
+	position: relative;
+}
+.newsKindBox {
+	background: #FA3333;
+}
+.optDelete {
+	position: absolute;
+	top: 2px;
+	left: 711px;
+	width: 24px;
+	height: 24px;
+	background: #ddd;
+	text-align: center;
+	line-height: 27px;
+	cursor: pointer;
+
+}
+.kindsDelete {
+	position: absolute;
+	top: 5px;
+	left: 311px;
+	height: 20px;
+	width: 20px;
+	background: #ddd;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.optionPriceDelete {
+	position: absolute;
+	top: 14px;
+	left: 181px;
+	height: 20px;
+	width: 20px;
+	background: #ddd;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.optionPDPriceMiniBOx {
+	position: relative;
+}
+.orderListHead .headTop {
+	margin: 18px 12px 4px 16px;
+}
+.willNotOrderListHead .willNotHeadTop {
+	margin: 18px 12px 4px 16px;
+}
+.willNotOrderListHead  .willNotHeadButton {
+	margin: 2px 12px 0px 16px;
+}
+.comments {
+	margin: 28px auto;
+	width: 750px;
+	position: relative;
+	display: none;
+}
+.finishedCommon {
+	margin: 28px auto;
+	width: 750px;
+	position: relative;
+	display: none;
+}
+.finishCommon {
+	margin: 28px auto;
+	width: 750px;
+	position: relative;
+	display: none;
+}
+.detailCom {
+	width: 100%;
+	border-top: 1px solid #ddd;
+	margin-top: 12px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #fff;
+}
+.commentOther {
+	position: relative;
+	top: 15px;
+}
+.commentDetailOth {
+	margin: 0 26px;
+}
+.commentDetailOth>:first-child {
+	color: rgba(0, 0, 0, 0.36);
+}
+.commentOther .commentDetailOth1 {
+	margin: 7px 26px 0 26px;
+} 
+.createGoodsSubmit {
+	margin: 0 325px;
+}
+.newGoodsPic {
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.55);
+	position: absolute;
+	width: 999px;
+	height: 265px;
+	top: 141px;
+	left: -222px;
+	color: white;
+	display: none;
+}
+.orderStore {
+	background-color: #d9edf7;
+}
+.orderNumber {
+	background-color: #d9edf7;
+}
+.orderNumber p {
+	work-break:break-word;
+	float: left;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 0;
+}
+.orderNumberStore {
+	width: 440px;
+}
+.orderNumberAddress {
+	width: 220px;
+}
+.orderNumberDate {
+	width: 130px;
+}
+.orderNumberTxt {
+	background-color: transparent;
+}
+.orderNumBox button {
+	margin: 0 372px;
+}
+.orderNumDetail {
+	display: none;
+}
+.finishOrderStore {
+	background-color: #d9edf7;
+}
+.finishOrderStore .orderNameBG {
+	padding: 15px;
+	font-size: 20px;
+	font-weight: bolder;
+	word-break: break-word;
+	width: 605px;
+}
+.finishOrderStore button {
+	float: right;
+	margin-top: -56px;
+}
+.finishOrderStore .orderNum {
+float: right;
+margin-top: -50px;
+margin-right: 88px;
+}
+.expressNum {
+	background-color: transparent;
+}
+.allWillNotOrderList {
+	width: 760px;
+	margin: 22px auto;
+	display: none;
+}
+.allStatisticsList {
+	width: 760px;
+	margin: 22px auto;
+}
+.pay {
+	margin: 16px 322px;
+}
+.totalStatistics {
+	width: 100%;
+}
+.StatisticsTr{
+	border: 1px solid #ccc;
+	height: 30px;
+	text-align: left;
+}
+.totalStatistics .StatisticsTr1 {
+	width: 50%;
+	text-align: center;
+}
+.totalStatistics .StatisticsTr2 {
+	width: 50%;
+	text-align: center;
+}
+td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+}
+.printOrderButton {
+	width: 760px;
+	margin: 22px auto;
+	display: none;
+}
+.include {
+	margin-left: 339px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>拼单团</title>
+     <meta charset="utf-8"/>
+     <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.4.min.css">
+     <link rel="stylesheet" type="text/css" href="css/main-page.css">
+     <script src="../js/jquery-1.11.1.min.js"></script>
+     <script src="js/jquery.mobile-1.4.4.min.js"></script>
+     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37350055" charset="UTF-8"></script>
+     <script type="text/javascript">
+     	//判断是手机端还是pc端
+
+		var isMobile = (function(){
+			return{
+				Android: function(){
+					return navigator.userAgent.match(/Android/i) ? true : false;
+				},
+				BlackBerry: function(){
+					return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+				},
+				ios: function(){
+					return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+				},
+				windows: function(){
+					return navigator.userAgent.match(/IEMobile/i) ? true : false;
+				},
+				any: function(){
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.ios() || isMobile.windows());
+				}
+			}
+		})();
+
+		(function(){
+			if (isMobile.any()) {
+				return true;
+			}else{
+				window.location.href = "../";
+			};
+		})();
+		//延时欢迎
+		(function(){
+			setTimeout(function(){
+				$(".welcome").fadeOut();
+			},2000);
+		})();
+     </script>
+</head>
+<body data-role="page">
+	<div class="welcome">
+		<img src="img/welcome.png">
+	</div>
+	<div class="ui-grid-solo logo">
+		<p><img src="img/logo3.png"></p>
+	</div>
+	<div class="ui-grid-solo fuli">
+		<span>科大“拼”，货到付款第一弹</span>
+	</div>
+	<div class="ui-grid-solo setMargin">
+		<div class="setP">
+			
+			<img src="img/purse-b-64.png">
+			货到付款
+		</div>
+	</div>
+	<div class="ui-grid-solo set-s-margin">
+		<div class="setP">
+			<img src="img/jisuwuliu-b-64.png">
+		    隔日到货
+		</div>
+	</div>
+	<div class="ui-grid-solo set-s-margin">
+		<div class="setP">
+			
+			<img src="img/zhekoupai-b-64.png">
+			件件折扣
+		</div>
+	</div>
+	<div class="ui-grid-solo set-nav-position">
+		<div class="setCenter">
+			<img class="clickN" src="img/dianji.png">
+			<div class="clickme">点我</div>
+		</div>
+	</div>
+	<div class="ui-grid-solo copyright">
+		Made by电子科技大学拼单团团队
+	</div>
+</body>
+<script type="text/javascript">
+//加入tap事件
+$(".clickN").on("tap",function(){
+	window.location.href = "moblieDetail.html?page=1";
+});
+
+
+
+</script>
+</html>

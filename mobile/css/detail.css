@@ -1,0 +1,52 @@
+/* line 1, ../sass/detail.scss */
+.content {
+  width: 100%;
+}
+/* line 3, ../sass/detail.scss */
+.content .content-detail {
+  padding: 15px;
+}
+/* line 5, ../sass/detail.scss */
+.content .content-detail img {
+  width: 100%;
+}
+
+/* line 10, ../sass/detail.scss */
+.header {
+  margin-top: -7px;
+}
+/* line 12, ../sass/detail.scss */
+.header ul {
+  height: 33px;
+}
+/* line 14, ../sass/detail.scss */
+.header ul li {
+  float: left;
+  list-style: none;
+  height: 33px;
+}
+/* line 15, ../sass/detail.scss */
+.header ul li:first-child {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 5px 0 5px;
+  width: 30%;
+}
+/* line 20, ../sass/detail.scss */
+.header ul li p {
+  color: #fff;
+  line-height: 33px;
+  text-align: center;
+}
+/* line 25, ../sass/detail.scss */
+.header ul li img {
+  width: 98px;
+  margin-top: 5px;
+}
+/* line 32, ../sass/detail.scss */
+.header ul li + li {
+  background-color: #4ba733;
+}
+/* line 37, ../sass/detail.scss */
+.header .header-tittle {
+  width: 66%;
+}

@@ -1,0 +1,103 @@
+.wrap{
+	background: url("../img/小单.jpg");
+	width: 1024px;
+	height: 358px;
+	position: relative;
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+body{
+	margin: auto;
+	width:1024px;
+	font-family: 微软雅黑;
+	color: #505050;
+	font-weight: 800
+}
+.main-name{
+	position: relative;
+	left: 197px;
+	top: 133px;
+}
+.main-phone{
+	position: absolute;
+	left: 197px;
+	top: 158px;
+}
+.main-date{
+	position: absolute;
+	left: 197px;
+	top: 183px;
+}
+.main-addr{
+	position: absolute;
+	left: 197px;
+	top: 205px;
+}
+.main-opt{
+	position: absolute;
+	left: 193px;
+	top: 229px;
+	width: 215px;
+	word-wrap: break-word;
+	font-size: 13px;
+}
+.main-ison{
+	position: absolute;
+	left: 197px;
+	top: 288px;
+}
+.main-store{
+	position: absolute;
+	left: 197px;
+	top: 267px;
+}
+.copy-name{
+	position: absolute;
+	left: 695px;
+	top: 32px;
+	border: 1px dashed #505050;
+	padding: 2px;
+}
+.copy-phone{
+	position: absolute;
+	left: 695px;
+	top: 91px;
+	border: 1px dashed #505050;
+	padding: 2px;
+}
+.copy-date{
+	position: absolute;
+	left: 695px;
+	top: 147px;
+	border: 1px dashed #505050;
+	padding: 2px;
+}
+.copy-opt{
+	position: absolute;
+	left: 695px;
+	top: 200px;
+	border: 1px dashed #505050;
+	padding: 2px;
+}
+.copy-ison{
+	position: absolute;
+	left: 695px;
+	top: 298px;
+	border: 1px dashed #505050;
+	padding: 2px;
+}
+.copy-store{
+	position: absolute;
+	left: 695px;
+	top: 254px;
+	border: 1px dashed #505050;
+	padding: 2px;
+}
+.price{
+	position: absolute;
+	left: 760px;
+	top: 298px;
+	display: none;
+}
+
+

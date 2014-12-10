@@ -1,0 +1,83 @@
+body{
+	font-family: 微软雅黑,黑体
+}
+.item{
+	float: left;
+	top: 0;
+}
+.item img{
+	width: 30%;
+	float: left;
+}
+.item p{
+	width: 64%;
+	float: left;
+	padding-left: 6%;
+}
+.opt{
+	float: left;
+}
+.opt ul{
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+	margin: 0;
+}
+.opt li{
+	float: left;
+	width: auto;
+	padding: 3%;
+	margin: 3px;
+	border: 1px solid rgb(226, 196, 196);
+}
+.num span,.num p{
+	display: block;
+	float: left;
+	margin: 3px;
+	width: 13%;
+	margin-top: 5%;
+	padding: 2%;
+	background: white;
+	text-align: center;
+	border: 1px solid rgb(226, 196, 196);
+}
+.num{
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+.price{
+	float: left;
+	width: 88%;
+	float: left;
+	bottom: 15%;
+	left: 5%;
+}
+.price p{
+	float: right;
+	margin: 0;
+	color: red;
+}
+.notice{
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: red;
+	margin: 0;
+}
+.buyNow{
+	background: rgb(229, 55, 55) !important;
+	float: left;
+	bottom: 8px;
+	outline: none;
+	border: none;
+	width: 90%;
+	height: 8%;
+	color: white;
+	margin-left: 5%;
+	border-radius: 6px;
+	box-shadow: none;
+	text-align: center;
+	line-height: 40px;
+}
